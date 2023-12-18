@@ -24,6 +24,6 @@ make.bat htmlhelp
 
 
  It will create build folder along with sub folder which is called **htmlhelp** it has **.hhp** file 
- you can use the **.hhp** file in **Html Help Workshop** it's an application to generate **chm** file.  
+ you can use this file in to **Html Help Workshop** it's an application to generate **chm** file.  
 > Note: whenever you are going to build html or chml using this we need to update videos file path in this rst files.(because document live site has different path for videos)
 
