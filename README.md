@@ -3,7 +3,7 @@
 - This rst format can help us to convert some other formats.
 - Every folder contains config.py file it hepls us to configure the theme.
 ## Build command for html 
-Open local path terminal run 
+ Open local path terminal run 
      
      
 ```sh
