@@ -1,4 +1,4 @@
-## Guides to generate html and chm
+# Guides to generate html and chm
 
 - This repository contains VCollab products documents in rst format.  
 - This rst format can help us to convert some other formats.
