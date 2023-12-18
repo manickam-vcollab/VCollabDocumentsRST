@@ -16,3 +16,6 @@
      it will create build folder along with sub folder which is "htmlhelp" it has .hhp file 
      you can use the .hhp file in "Html Help Workshop" to generate chm file.  
 > Note: When ever we are going to build html or chml using this we need to update videos file path in this rst files.(because document live site has different path for videos)
+```sh
+  make.bat html
+```
