@@ -1,7 +1,9 @@
 ## guides to generate html and chm
+
 - This repository contains VCollab products documents in rst format.  
 - This rst format can help us to convert some other formats.
 - Every folder contains config.py file it hepls us to configure the theme.
+  
 ## Build command for html 
  Open local path terminal run 
      
