@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Operations</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Set As Image" href="SetAsImage.html" />
+    <link rel="prev" title="Navigator" href="Transform.html" />
+
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          VCollabPresenter</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPresenter</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Mouse Operations</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="Transform.html" title="Previous Chapter: Navigator"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Navigator</span>
+    </a>
+  </li>
+  <li>
+    <a href="SetAsImage.html" title="Next Chapter: Set As Image"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Set As Image &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="mouse-operations">
+<h1>Mouse Operations</h1>
+<p>This section lists and explains the functions performed by the mouse.</p>
+<p><strong>Motion Model</strong></p>
+<p>The basic functions for any 3D model viewer are Pan, Rotate and Zoom.</p>
+<p>This motion model functions are achieved in two ways,</p>
+<ol class="arabic simple">
+<li>Interactive method</li>
+<li>Passive Transformation method.</li>
+</ol>
+<p><strong>Interactive Method</strong></p>
+<ol class="arabic">
+<li><p class="first"><strong>Pan</strong>
+This is achieved by dragging the <strong>right</strong> button or third
+button inside the viewer.</p>
+<ol class="arabic simple">
+<li>Press down the mouse <strong>right</strong> button and hold inside the viewer.</li>
+<li>Drag the mouse as the model is panned proportionally.</li>
+<li>Release the mouse button to stop panning.</li>
+<li>Model panning and mouse dragging will be in the same direction.</li>
+</ol>
+</li>
+<li><p class="first"><strong>Rotate</strong>
+This is achieved by dragging the mouse <strong>left</strong> button or
+mouse first button inside the viewer.</p>
+<ol class="arabic simple">
+<li>Press down the mouse <strong>left</strong> button and hold inside the viewer.</li>
+<li>Drag the mouse as the model is panned proportionally.</li>
+<li>Release the mouse button to stop rotation.</li>
+<li>The axis of rotation will be perpendicular to the mouse direction.</li>
+<li>Direction of rotation and mouse dragging direction are the same.</li>
+<li>Default rotation center is the center of the model.</li>
+<li>User can change and set any point on the model as rotation center
+using Display | Set Rotation Center.</li>
+</ol>
+</li>
+<li><p class="first"><strong>Zoom</strong>
+Zoom is achieved further in two ways</p>
+<ol class="arabic simple">
+<li>Mouse dragging<ul>
+<li>Press down the mouse middle button and hold inside the viewer.</li>
+<li>Drag the mouse as the model is panned proportionally.</li>
+<li>Release the mouse button to stop zoom.</li>
+<li>If the mouse dragging direction is vertically downwards, then
+the model will be zoomed in.</li>
+<li>if it is vertically upwards, then the model will be zoomed out.</li>
+<li>Here the window scene center is zoomed in or out.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p class="first"><strong>Mouse Scroll</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>The advantage in mouse scroll zoom is, here zoom is <em>mouse pointer position based</em>.</li>
+<li>Move the mouse to the position on the model to be zoomed in or out.</li>
+<li>Scroll forward to zoom in.</li>
+<li>Scroll backward to zoom out.</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<p><strong>Passive Transformation method</strong></p>
+<p>In general, it is very hard to go back to the previous transform, after
+some model transformations. It is almost impossible in case of
+interactive rotations. Because the mouse dragging curve is not linear.
+Passive transformation methods overcome this disadvantage significantly.
+Passive transformations are linear and uniformly incremental /
+decremental. VCollab provides a user friendly interface, Navigator
+inside the viewer.</p>
+<p>Click <strong>Tools | Navigator</strong> to know more.</p>
+<p>Note: The default mouse buttons for motion model can be customized using
+Edit | Mouse Mode.</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2023, Visual Collaboration Technologies Inc..<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

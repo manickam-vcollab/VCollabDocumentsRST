@@ -1,0 +1,374 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Compare Mesh &mdash; VCollab-Document  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/Custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #EDEDED" >
+          
+
+          
+            <a href="../VCollabPresenter.html">
+          
+
+          
+            
+            <img src="../_static/VCollab-Logo-wt.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+              <div class="version">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Version</title>
+</head>
+<body>
+    
+    <span class="version">23.2.0
+              </div>
+
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">VCollabPresenter X</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../VCollabPresenter.html">VCollab-Document</a>
+        
+      </nav>
+
+	  <div class="rst-header">
+	  
+	   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" class="rst-header" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../VCollabPresenter.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Compare Mesh</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+	  
+	  </div>
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+         
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="compare-mesh">
+<h1>Compare Mesh<a class="headerlink" href="#compare-mesh" title="Permalink to this headline">¶</a></h1>
+<p>This section explains the procedure to compare mesh geometry of two
+merged models. It compares two selected models, source and target
+models. For each vertex from source model, nearest point on the
+target model is computed and the shortest distance value is stored as
+a CAE result for the source model. This new result can be displayed
+like any other CAE result.</p>
+<p><strong>Pre-condition</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>At least two or more cax models should exist in scene.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Compare Mesh Panel</strong></p>
+<blockquote>
+<div><p><img alt="image1" src="../_images/Compare_mesh_panel.png" /></p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Source</strong></p></td>
+<td><p>Select source model.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Target</strong></p></td>
+<td><p>Select target model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Max. Deviation</strong></p></td>
+<td><p>Specify maximum deviation of interest. This value is used as a bound to select target mesh geometry. Default value is computed based on the source model bounding radius.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Compare Options</strong></p></td>
+<td><p>Select compare mode.
+#. Same Part: Parts with same name are compared.
+#. Visible Parts: Each source part is compared with all visible target model parts.
+#. All Parts: Each source part is compared with all target model parts</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Add to Viewpoint</strong></p></td>
+<td><p>New result will be displayed and added as a viewpoint.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Set Part Max Deviation</strong></p></td>
+<td><p>All nodes of the part are set with one maximum distance value. This will highlight deviated parts.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Compare Feature Edge</strong></p></td>
+<td><p>Compares feature edges of models in addition to usual comparison.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>With Sign</strong></p></td>
+<td><p>Based on the surface normal of the target model, this function determines whether the sign is positive or negative.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Compare</strong></p></td>
+<td><p>Click Compare to compute and display deviation result.
+New result (or instance) is added to the CAE result list.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li><p>If ‘Add to Viewpoint’ option is ON, a viewpoint with a name
+‘<em>[sourcemodel]</em>_
+Vs_<em>[targetmodel]</em>_<em>[maxDistanceValue]</em>_<em>[compareMode]</em>’
+will be created under the viewpath ‘Compare_Mesh’.</p></li>
+<li><p>User can not compare same models again with same dialog parameters</p></li>
+<li><p><strong>Max. Deviation:</strong>
+Max. Deviation is used to filter the number of triangles in
+target model used for finding shortest distance for comparison.
+When <em>Max. Deviation</em> is a large value, more number of triangles
+are considered and computation can be slow. When no triangles are
+found within this limit, a large value is set as distance. The
+default value for the maximum deviation is set based on source
+model bounding box. User has to specify <em>Max. Deviation</em> based on
+the distance that need to be measured. For quick analysis, user
+can set a small value based on the size of triangles.</p></li>
+<li><p><strong>Model/Part Transformation:</strong>
+All the model and part transformations (Pick &amp; Move, Explode) are
+considered while computing the deviation.</p></li>
+<li><p><strong>Set Part Max Deviation:</strong>
+First deviation for each node for a part is computed. Then, If the
+option is false, the deviation for each node is stored as CAE
+result. If the option is true, then all nodes of the part are set
+with same maximum part deviation. This way a part will have same
+result or color. The parts with deviation will get highlighted
+using this option.</p>
+<blockquote>
+<div><p><img alt="image2" src="../_images/Compare_mesh_different.png" /></p>
+</div></blockquote>
+</li>
+</ul>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Load and Merge at least two models.</p></li>
+<li><p>Click ‘Compare Mesh’ icon<img alt="image3" src="../_images/Compare_mesh_icon.png" /> in Tools toolbar.</p></li>
+<li><p>It pops up Compare Mesh interface.</p></li>
+<li><p>Select Source Model.</p></li>
+<li><p>Select Target Model.</p></li>
+<li><p>Specify Max.Deviation if necessary.</p></li>
+<li><p>Select Compare Mode from Compare Options.</p></li>
+<li><p>Click Compare.</p></li>
+<li><p>New CAE result with name “Compare <em>[Target Model Name]_[Compare
+Mode]_[SetPartMax ON/OFF]</em>” will be created with new instance name
+“Max.Deviation: <em>[Deviation Value]</em>” to Source Model.</p></li>
+<li><p>User can create new comparison of same models by changing
+Max.Deviation value. It will be appended to the same result as
+another instance or iteration.</p></li>
+<li><p>The same result is selected and applied for color plot.</p></li>
+<li><p>User can handle the result as a CAE result.</p></li>
+<li><p>Check ‘Add to Viewpoint’ option to add the scene with deviation
+contour  to viewpoints.</p>
+<blockquote>
+<div><p><img alt="image4" src="../_images/Compare_mesh_AllParts.png" /></p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<p><strong>Compare Mode Selection</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Select compare mode Carefully, otherwise it leads to ‘N/A’ or no
+results.</p></li>
+<li><p>If both the model contains parts with same name, then select ‘Same
+Parts’ mode.</p></li>
+<li><p>If part names are different ,  go for other options,</p>
+<ul>
+<li><p>If number of parts are more, but user want to compare specific
+parts, then hide unnecessary parts in source model as well as
+in target model.  Then select ‘Visible parts’ mode.</p></li>
+<li><p>Else click ‘All parts’ mode. It may take significant time to
+complete the process compared to earlier options.</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>How meshes are compared?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Compare mesh option is provided for comparing mesh geometry
+between two models.</p></li>
+<li><p>User need to select appropriate parts in each models for
+comparison.</p></li>
+<li><p>A vertex set from first (reference) model is compared with all
+triangles in the second model. The nearest distance from each
+vertex in first model to all the triangles in the second model is
+computed and stored as a new result in the first model. This
+result is displayed as a color plot. User specified distance limit
+is used to filter triangles from second model. <img alt="image5" src="../_images/Compare_mesh_Model.png" /></p></li>
+<li><p>It is recommended to use model with higher mesh density as first
+model.</p></li>
+<li><p>The models used for the comparison can come from CAD or CAE
+models.</p></li>
+<li><p>Distance from a vertex to a triangle is computed as follow:
+<img alt="image6" src="../_images/Compare_mesh_with_Triangle.png" /></p></li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Visual Collaboration Technologies Inc..
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+  
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-736729-4"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-736729-4');
+</script>
+	    
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          VCollabPresenter</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">VCollabPresenter</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Animation</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="animation">
+<h1>Animation</h1>
+<p>Animation is makes a 3D visualization tool, a complete one. VCollab animation functions makes user to feel 3D environment virtually.</p>
+<p><strong>Settings Panel</strong></p>
+<blockquote>
+<div><img alt="image0" src="../_images/CAE_Animation_Settings_Panel.JPG" /></div></blockquote>
+<p><strong>Types of Animations:</strong></p>
+<ul>
+<li><p class="first"><strong>Linear Animation</strong></p>
+<p>It starts with original position of structure and ends with deformed position of structure. Number of frames provided by user are linearly interpolated between initial and deformed positions.</p>
+</li>
+<li><p class="first"><strong>Transient Animation</strong></p>
+<p>This is to animate the structure with time step positions computed by a solver.</p>
+<p>It is extracting all instances into frames and animates them. User is not allowed to change number of frames.</p>
+<p>Each frame refers to one instance or one time step.</p>
+</li>
+<li><p class="first"><strong>Animation of Results</strong></p>
+<p>Animates the frames in which, each frame refers to each result.</p>
+</li>
+<li><p class="first">Eigenvector</p>
+<p>Animating eigenvector results (complex eigen as well as mode case data).</p>
+</li>
+<li><p class="first">Dataset</p>
+<p>Animates all the datasets, if more than one dataset exists. Each frame in the animation refers to one dataset result.</p>
+</li>
+</ul>
+<p>VCollab supports harmonic motion and swing motion in additional.</p>
+<p><strong>CAE Animation</strong></p>
+<p>CAE Animation is computing and simulating of CAE data with finite number of frames. For example, Let CAE data have 4 frames for animation. Animation of this data is to display frames in the order of <strong>1, 2,3, 4</strong>. Animation starts with frame 1 and ends with frame 4.</p>
+<p><strong>Swing Motion</strong></p>
+<p>To display the frames in the order <strong>1,2,3,4,3,2,1</strong>. Animation starts and ends with initial frame.</p>
+<p><strong>Static Fringe</strong></p>
+<p>Static Fringe option helps to display an overall Legend Palette for animation. Legend Palette is changing its values according to frame results. Static Fringe option computes an overall min and max of all frames CAE results and displays a static color palette.</p>
+<p><strong>Reverse Play</strong></p>
+<p>To display the frames in the order 4,3,2,1. Animation starts from last frame and ends with first frame.</p>
+<p><strong>Harmonic</strong> <strong>Motion</strong></p>
+<p>To display equivalent mirror frames of all these 4 frames and displaying frames in the order <strong>-4,-3,-2,-1,1,2,3,4</strong>.</p>
+<p>This motion is applicable for static analysis only (i.e., Linear Animation).</p>
+<p><strong>Harmonic</strong> <strong>with swing motion</strong></p>
+<p>To display frames in the order <strong>-4,-3,-2,-1, 1,2,3, 4, 3,2,1, -1,-2,-3,-4</strong>.</p>
+<p>As harmonic motion involves, this type of motion is applicable only for Linear Animation.</p>
+<p><strong>Synchronize</strong></p>
+<blockquote>
+<div>This option is enabled if two or more dataset exists. It synchronizes similar types of animations of more than one datasets.</div></blockquote>
+<p><strong>Skip By</strong></p>
+<p>This option helps user to skip number of frames. If the model contains huge number of instances, it may take much time for a cycle.</p>
+<p>This can be sped up by skipping some number of frames.</p>
+<p><strong>RAM / HDD</strong></p>
+<p>User has two option to store animation frame data either into RAM and HDD.</p>
+<ul class="simple">
+<li>RAM - this option provides an improved performance during animation. This performance will reduce and hang if RAM free space is less or nearly null.</li>
+<li>HDD - this option stores frame data into hard disk and revoke it whenever necessary. If memory is nearly full in RAM, user can use this option for a better improved cycle.</li>
+</ul>
+<p><strong>How to animate model relative to a position or point or node?</strong></p>
+<ul class="simple">
+<li>Click ‘Pivot…’ option in CAE Animation Settings dialog.</li>
+<li>It pops up ‘Pivot Settings’ dialog.</li>
+</ul>
+<blockquote>
+<div><img alt="image1" src="../_images/Animate_Pivot_Settings.jpg" /></div></blockquote>
+<ul class="simple">
+<li>Select ‘Node’ in the Pivot combo box.</li>
+</ul>
+<blockquote>
+<div><img alt="image2" src="../_images/Animate_Pivot_Pick_1.jpg" /></div></blockquote>
+<ul class="simple">
+<li>Click ‘Pick’ button to select the node in the model.</li>
+</ul>
+<blockquote>
+<div><img alt="image3" src="../_images/Animate_Pivot_Pick_2.jpg" /></div></blockquote>
+<ul class="simple">
+<li>Click a node on the model.</li>
+<li>Node number is displayed in the ID text. i.e., Picked ID will be considered as Pivot point.</li>
+<li>The deformation at the pivot point is fixed.</li>
+<li>Now animate the model and notice that simulation changed relatively to pivot point.</li>
+</ul>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2023, Visual Collaboration Technologies Inc..<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

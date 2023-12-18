@@ -1,0 +1,625 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Export &mdash; VCollab-Document  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/Custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Import" href="Import.html" />
+    <link rel="prev" title="Save As" href="Save_As.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #EDEDED" >
+          
+
+          
+            <a href="../VCollabProX.html">
+          
+
+          
+            
+            <img src="../_static/VCollab-Logo-wt.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+              <div class="version">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Version</title>
+</head>
+<body>
+    
+    <span class="version">23.3
+              </div>
+
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPro X</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="GUI_Layout.html">GUI Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System_Requirements.html">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Custom_Toolbar.html">Custom Toolbar</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="File_Menu.html">File</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Loading_CAX.html">Loading CAX file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Merging_CAX.html">Merging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Save_As.html">Save As</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Import.html">Import</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="View_Menu.html">View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Edit_Menu.html">Edit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tools_Menu.html">Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CAE_Menu.html">CAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Find_Parts.html">Find Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Profiles.html">Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BatchMode.html">Batch Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PyTools/index.html">Python Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Headless_Server.html">Linux - Configuration for Headless Server</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../VCollabProX.html">VCollab-Document</a>
+        
+      </nav>
+
+	  <div class="rst-header">
+	  
+	   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" class="rst-header" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../VCollabProX.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">VCollabPro X</a> &raquo;</li>
+        
+          <li><a href="File_Menu.html">File</a> &raquo;</li>
+        
+      <li>Export</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="Import.html" class="btn btn-neutral float-right" title="Import" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="Save_As.html" class="btn btn-neutral float-left" title="Save As" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+	  
+	  </div>
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+         
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="export">
+<h1>Export<a class="headerlink" href="#export" title="Permalink to this headline">¶</a></h1>
+<p>Export options are available in the File toolbar drop down list,</p>
+<blockquote>
+<div><p><img alt="image1" src="../_images/File_Menu_Items.png" /></p>
+</div></blockquote>
+<p><strong>Export into Image files</strong></p>
+<p>VCollab Pro exports current scene into the following image
+formats,</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>JPG (*.jpg),</p></li>
+<li><p>BMP (*.bmp),</p></li>
+<li><p>PNG (*.png),</p></li>
+<li><p>TIF (*.tif).</p></li>
+</ul>
+</div></blockquote>
+<p>Procedure:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Click ‘Export Image’ option.</p></li>
+<li><p>Enter a new image file name.</p></li>
+<li><p>Select <strong>Save As</strong> type format.</p></li>
+<li><p>Click Save.</p></li>
+</ol>
+</div></blockquote>
+<p>Exporting Cropped Image</p>
+<p>‘Export Image Region’  allows user to select a portion of scene
+to be exported as image. User can resize the highlighted viewer
+portion using mouse.</p>
+<p>Procedure:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Click ‘Export Image Region’ option.</p></li>
+<li><p>A window overlay will be appeared in viewer.</p></li>
+<li><p>User can resize and move the window.</p></li>
+<li><p><img alt="image2" src="../_images/Export_Image_Region.png" /></p></li>
+<li><p>Click ‘Capture’ option in center of overlay after setting up
+the region.</p></li>
+<li><p>It pops up file browser dialog.</p></li>
+<li><p>Provide file name.</p></li>
+<li><p>Click ‘Save’</p></li>
+</ol>
+</div></blockquote>
+<p><strong>Export Viewpoints</strong></p>
+<p>VCollab Pro exports CAX viewpoints data into following format files,</p>
+<blockquote>
+<div><p><img alt="image3" src="../_images/File_Export_Viewpoints.png" /></p>
+<blockquote>
+<div><blockquote>
+<div><ul>
+<li><p><strong>wCAX / 3D HTML</strong>, a VCollab format for web viewer.</p>
+<p>This option exports geometry with current scalar result and
+user selected viewpoints data into a wCAX file format. wCAX
+is a compressed and filtered data based on part and result
+existence in viewpoints.</p>
+</li>
+</ul>
+</div></blockquote>
+<p><img alt="image4" src="../_images/File_Export_Wcax.png" /></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>File Path</strong></p></td>
+<td><p>Output <em>wCAX/3D HTML</em> file path</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Viewpoints</strong></p></td>
+<td><p>Allows user to select following
+viewpoint export options,</p>
+<ol class="arabic simple">
+<li><p>All Viewpaths</p></li>
+<li><p>Current Viewpath</p></li>
+<li><p>Current Viewpoint</p></li>
+<li><p>Current Display.</p></li>
+<li><p>Selected Elements</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Select</strong></p></td>
+<td><p>This option is enabled only for
+selected elements option. Allows
+user to define a rectanglein the
+viewer.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Set Export Mode</strong></p></td>
+<td><p>This option is enabled only for
+Current Viewpath option. Allows
+user to set export mode 2D / 3D
+for each viewpoint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Thumbnail</strong></p></td>
+<td><p>Stores thumbnail image for each
+viewpoint.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Store Normal</strong></p></td>
+<td><p>Exports vertex normals into WCAX
+file. It may increase the file
+size.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Password</strong></p></td>
+<td><p>Enables password setup to WCAX
+file.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Compact</strong></p></td>
+<td><p>Filters out duplicate data before
+exporting. This may take more time
+but will result in reduced file
+size.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Advanced Settings</strong></p></td>
+<td><p>This function pops up web viewer
+options dialog. It contains
+generic and premium feature On/Off
+functions. Based on that features
+enabled here, web viewer will
+diplay relevant interfaces.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Save</strong></p></td>
+<td><p>Saves wCAX / 3D HTML file</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Web Viewer Options</strong></p>
+<p><img alt="image13" src="../_images/WebViewer_Settings_Panel.png" /></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 69%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Product Tree</strong></p></td>
+<td><p>If this option is checked, Product tree
+interface will be displayed in web viewer,
+otherwise not.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Probe</strong></p></td>
+<td><p>If this option is checked, Probe
+interface will be displayed in web viewer,
+otherwise not.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Section</strong></p></td>
+<td><p>If this option is checked, Section
+interface will be displayed in web viewer,
+otherwise not.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Explode</strong></p></td>
+<td><p>If this option is checked, Explode
+interface will be displayed in web viewer,
+otherwise not.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>DisplayModes</strong></p></td>
+<td><p>If this option is checked, Display Modes
+interface will be displayed in web viewer,
+otherwise not.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Apply</strong></p></td>
+<td><p>Sets these options to be carried out.</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+<p><strong>Selected Elements</strong></p>
+<p>This option allows user to select a region in the screen and
+clip the elements outside the region. User can further clip
+model by moving front and back planes. Now the bounded elements
+with current orientation can be exported into wCAX / 3D HTML
+file.</p>
+<p><strong>Note</strong>:</p>
+<blockquote>
+<div><ul>
+<li><p>Deletion of results will affect existing viewpoints. These
+affected viewpoints will be ignored while writing into
+WCAx/HTML.</p></li>
+<li><p>Animation state will be ignored in case of Current Display
+option.</p></li>
+<li><p>Some internet browsers may not support TIFF image format.
+VCollab recommends png,jpeg and gif formats for background
+if required.</p></li>
+<li><p>In “WebViewer Settings” dialog, Premium features <em>Product Tree</em>, <em>Probe</em>, <em>Section</em> and <em>Explode</em> options will be disabled as below, if corresponding licenses are not available.</p>
+<blockquote>
+<div><p><img alt="image14" src="../_images/WebViewer_Settings_Panel_No_License.png" /></p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<ul>
+<li><p>Export Mode</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>3D - exports 3D data from the viewpoint selected.</p></li>
+<li><p>2D - exports 2D image data from current viewpoint display</p></li>
+<li><p>Skip - skips this viewpoint in export function.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>PPT</strong>, Microsoft PowerPoint file.</p>
+<blockquote>
+<div><p><img alt="image5" src="../_images/Export2PPT.png" /></p>
+</div></blockquote>
+</li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Left, Right, Top, Bot</strong></p></td>
+<td><p>Left, Right, Top and Bottom margins to be set in PPT slide.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Plain Banckground</strong></p></td>
+<td><p>A flag, used to change the background to plain before capturing the image.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Edit Text</strong></p></td>
+<td><p>Labels copied to PPT can be editable if the flag is checked.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Show Title</strong></p></td>
+<td><p>A flag, used to set title visibility in the PPT slide.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Animation</strong></p></td>
+<td><p>A flag, used to capture the animation as gif or a static image.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PPT Template</strong></p></td>
+<td><p>Powerpoint template (*.pot) file path as an optional use.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Output File</strong></p></td>
+<td><p>Output PPTx file path.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>OK</strong></p></td>
+<td><p>Creates PPTx file with the above attributes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Cancel</strong></p></td>
+<td><p>Cancels the process.</p></td>
+</tr>
+</tbody>
+</table>
+<p>It exports all viewpoints as images into Microsoft PowerPoint
+file, with viewpoint title. User can control the position and
+size of image.</p>
+<blockquote>
+<div><ul>
+<li><p><strong>VPT</strong>, a viewpoint file (*.vpt).</p>
+<p>It exports all view paths/viewpoints into a single VPT file.
+This VPT file can be merged with appropriate CAX files later.</p>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Export Probe Labels</strong></p>
+<blockquote>
+<div><p>VCollab Pro exports all CAE Probe labels generated by using Probe
+and Hotspot finder modules into Comma Separated .csv files.</p>
+<p>For example, result information saved in csv format as follows,</p>
+<p>Model,Part,NodeID,ElementID,Xpos,Ypos,Zpos,Instance,Result,Value</p>
+<p>Bracket2,Object 1,179,,0.95839,1.32199,6.99499,L1M1,Reaction</p>
+<p>Force:Translational Magnitude,71.5747</p>
+</div></blockquote>
+<p><strong>Capture Movie</strong></p>
+<blockquote>
+<div><p>This function allows user to record user interactions whenever
+required and output them into a movie file.</p>
+<p><img alt="image6" src="../_images/Capture_Movie_Panel.png" /></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Output File</p></td>
+<td><p>Output movie file name path.</p></td>
+</tr>
+<tr class="row-even"><td><p>Speed</p></td>
+<td><p>Controls the speed of the movie.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Record/Stop</p></td>
+<td><p>Starts / Stops recording actions</p></td>
+</tr>
+<tr class="row-even"><td><p>Close</p></td>
+<td><p>Closes the window.</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Make Movie</strong></p>
+<blockquote>
+<div><blockquote>
+<div><p>This additional feature stitches a set of external images into
+animated movie file.</p>
+<p><img alt="image7" src="../_images/Make_Movie_Panel.png" /></p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Input Folder</p></td>
+<td><p>Input path for the folder that contains set of images.</p></td>
+</tr>
+<tr class="row-even"><td><p>Output File</p></td>
+<td><p>Output path and file name.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Speed</p></td>
+<td><p>Controls the speed of the movie.</p></td>
+</tr>
+<tr class="row-even"><td><p>Make</p></td>
+<td><p>Creates the movie.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Close</p></td>
+<td><p>Closes the window.</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Note:</strong> Before making movie, user is advised to make sure that
+the following constraints are met.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>All images in the folder should be of same format.</p></li>
+<li><p>The image folder should contain images for one dataset.</p></li>
+<li><p>Filenames of images should have combined with two texts,</p>
+<ul>
+<li><p>One is common name for all images.</p></li>
+<li><p>The other part should be of numerical index.</p></li>
+<li><p>This unique numerical index plays the role of sorting the
+frames in a proper order.</p></li>
+<li><p>This index part should be either first part or the last part of
+the file name.</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>How to export selected elements?</strong></p>
+<blockquote>
+<div><ul>
+<li><p>Click ‘<strong>File | Export</strong>’</p></li>
+<li><p>Select ‘<strong>wCAx / 3D HTML</strong>’ option.</p></li>
+<li><p>It pops up ‘<strong>Export wCAx / 3D HTML</strong>’ dialog.</p></li>
+<li><p>Provide output wcax or html file path using file browser dialog or
+enter the file path.</p></li>
+<li><p>Click ‘<strong>Selected Elements</strong>’ in the drop down list.</p>
+<p><img alt="image8" src="../_images/Export_SelectedElements_panel.png" /></p>
+</li>
+<li><p>It enables ‘<strong>Select</strong>’ button which helps to define rectangular
+region in viewer.</p></li>
+<li><p>Click ‘<strong>Select</strong>’ button.</p></li>
+<li><p>Define a rectangular region of interest in viewer using mouse left
+button drag.</p>
+<p><img alt="image9" src="../_images/Export_SelectedElements_Region.png" /></p>
+</li>
+<li><p>Elements outside region will be clipped by the frustum
+(rectangle).</p>
+<p><img alt="image10" src="../_images/Export_SelectedElements_Clipped.png" /></p>
+</li>
+<li><p>Orient the model to visualize the depth of frustum.</p>
+<p><img alt="image11" src="../_images/Export_SelectedElements_Orient.png" /></p>
+</li>
+<li><p>User can move front and back planes by clicking on them and
+dragging with mouse left button.</p>
+<p><img alt="image12" src="../_images/Selected_Elements.gif" /></p>
+</li>
+<li><p>Enable ‘<strong>Thumbnail</strong>’ opiotn to capture the region selection as
+thumbnail image.</p></li>
+<li><p>Click ‘<strong>Save</strong>’ button.</p></li>
+<li><p>A message ‘<strong>File Saved</strong>’ will pop up, if succeeded.</p></li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Visual Collaboration Technologies Inc..
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+  
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-736729-4"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-736729-4');
+</script>
+	    
+</body>
+</html>

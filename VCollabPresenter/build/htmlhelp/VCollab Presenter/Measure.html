@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Measure</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Align Models" href="Align%20Models.html" />
+    <link rel="prev" title="Pick" href="Assembly.html" />
+
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          VCollabPresenter</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPresenter</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Measure</a><ul>
+<li><a class="reference internal" href="#export-to-csv">Export to CSV</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="Assembly.html" title="Previous Chapter: Pick"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Pick</span>
+    </a>
+  </li>
+  <li>
+    <a href="Align%20Models.html" title="Next Chapter: Align Models"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Align Models &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="measure">
+<h1>Measure</h1>
+<p>The Measure option found in the context menu lets users measure the
+following:</p>
+<ul class="simple">
+<li>Linear Measurement<ul>
+<li>Point to Point</li>
+<li>Point to Edge</li>
+<li>Point to Face</li>
+</ul>
+</li>
+<li>Arc Measurement</li>
+<li>Snap Vertex</li>
+<li>Vertex Info</li>
+<li>Export to CSV</li>
+</ul>
+<p><strong>Linear Measurement</strong></p>
+<ol class="arabic simple">
+<li><strong>Point to Point :</strong> Measures distance between two points picked by
+the user.</li>
+<li><strong>Point to Edge:</strong> Measures shortest distance between point and the
+edge picked by the user.</li>
+</ol>
+<p><img alt="image0" src="../_images/Linear_measurement.gif" /></p>
+<p><strong>Point to Face:</strong> Measures shortest distance between a point and a
+triangle picked by the user.</p>
+<p><img alt="image1" src="../_images/Point_to_face_measurement.gif" /></p>
+<p><strong>Measure</strong></p>
+<p><img alt="image2" src="../_images/Measure_contextmenu.png" /></p>
+<p>The various options available in the Measure sub menu are explained
+below</p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Distance</strong></td>
+<td>Allows users to measure the shortest distance between two points in the model.</td>
+</tr>
+<tr class="row-even"><td><strong>Arc</strong></td>
+<td>Allows users to measure circular arc with its length, including angle and radius.</td>
+</tr>
+<tr class="row-odd"><td><strong>Point To Edge</strong></td>
+<td>Allows users to measure the shortest distance between a point and an edge.</td>
+</tr>
+<tr class="row-even"><td><strong>Point To Face</strong></td>
+<td>Allows users to measure the shortest distance between a point and a polygon.</td>
+</tr>
+<tr class="row-odd"><td><strong>Snap Vertex</strong></td>
+<td>Allows users to pick model vertices for measurement.</td>
+</tr>
+<tr class="row-even"><td><strong>Vertex Info</strong></td>
+<td>Displays mouse cursor hit point coordinates in a label.</td>
+</tr>
+<tr class="row-odd"><td><strong>Export to CSV</strong></td>
+<td>Exports 3D Distance data into a CSV (Comma Seperated File)</td>
+</tr>
+<tr class="row-even"><td><strong>Compare Mesh</strong></td>
+<td>This module helps users to compare two meshes and its deviation as a CAE result.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Linear Measurement</strong></p>
+<p><strong>Point to Point</strong></p>
+<ul class="simple">
+<li>Select <strong>Measure | Distance</strong> option from the Viewer context Menu or
+click <img alt="image3" src="../_images/Measurement_icon.jpg" />from the toolbar.</li>
+<li>Click 2 points of interest on the model to measure the distance.</li>
+<li>The points clicked are highlighted in red and a line is drawn between
+the endpoints.</li>
+<li>An annotated label with distance value is attached to the middle
+point of the line drawn.</li>
+</ul>
+<p><img alt="image4" src="../_images/Point_to_point_viewer.png" /></p>
+<ul class="simple">
+<li>Double clicking on the measure allows to format the label data and renaming the measure name.</li>
+</ul>
+<p><strong>Point to Edge</strong></p>
+<ul class="simple">
+<li>Click <strong>Measure | Point to Edge</strong> option from the context menu.</li>
+<li>Click a point on a model and click on the closest triangle edge.</li>
+<li>The point and the closest edge will be highlighted in red. Edge is
+extended if the foot of perpendicular does not lie in the edge
+segment.</li>
+<li>An annotated label with distance value is attached to the middle
+point of the line drawn.</li>
+</ul>
+<p><img alt="image5" src="../_images/Point_to_edge_viewer.png" /></p>
+<ul class="simple">
+<li>Double clicking on the label pops up a measure label dialog box.</li>
+<li>User can edit the measure name and label attributes.</li>
+</ul>
+<p><strong>Point to Face</strong></p>
+<ul class="simple">
+<li>Click <strong>Measure | Point to Fac</strong>e option from the context menu</li>
+<li>Click a point and a triangle on the model</li>
+<li>The point and triangle points will be highlighted in red.</li>
+<li>An annotated label with distance value is attached to the middle
+point of line drawn.</li>
+</ul>
+<p><img alt="image6" src="../_images/Point_to_face_viewer.jpg" /></p>
+<p><strong>Arc Measurement</strong></p>
+<ul class="simple">
+<li>Click <strong>Measure | Arc</strong> option from the context menu.</li>
+<li>Click on 3 points of interest to create Arc</li>
+<li>An arc is drawn from start point to end point passing through the
+second point.</li>
+<li>All three points are highlighted in red.</li>
+<li>An arrow is drawn from the center of the arc to the curve to denote
+the radius.</li>
+<li>An annotated label with arc information is attached to the center of
+the arc.</li>
+<li>The part of the curve that is hidden behind the model is drawn with
+dashed lines.</li>
+</ul>
+<p><img alt="image7" src="../_images/Arc_measurement_viewer.png" /></p>
+<p><strong>Snap Vertex</strong></p>
+<ul class="simple">
+<li>This enables the user to select the nearest vertex of the model by
+clicking while measuring distance or an arc.</li>
+<li>Users can use the Snap Vertex option to assure that the arc computed
+and drawn is passing through actual arc points of the model.</li>
+</ul>
+<p><strong>Vertex Info</strong></p>
+<p>When this option is selected, users can see a label with the X, Y, Z
+coordinates of an existing vertex, while moving the mouse on the model.</p>
+<p><img alt="image8" src="../_images/Vertex_info_viewer.jpg" /></p>
+<div class="section" id="export-to-csv">
+<h2>Export to CSV</h2>
+<p>This function helps user to export all visible measurement data into a csv file.</p>
+<p>User can achieve this either through “Tools | Measurement | Export to CSV” in menu bar or “Measure | Export to CSV” in context menu.</p>
+<p><strong>Sample CSV file</strong></p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first line-block">
+<div class="line"># Application Name: VCollab Pro X</div>
+<div class="line"># Application Version: 4.12.121.605</div>
+<div class="line"># Date &amp; Time : 21-10-2021, 18:43:30</div>
+<div class="line"># Current User : karuna</div>
+</div>
+<div class="last line-block">
+<div class="line"># Measure Name, Measure Value, Model Name 1, Model Name 2, Node ID 1,X1,Y1,Z1, Node ID 2,X2,Y2,Z2</div>
+<div class="line">Measure 1,43.046,body1,Fadjuster,NA,-13.8797,-19.9479,41.2141,NA,-0.179211,3.7484,7.99158</div>
+<div class="line">Measure 2,31.718,body2,Fbody,NA,22.7075,-18.5456,32.922,NA,4.77808,-33.8141,11.6751</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2023, Visual Collaboration Technologies Inc..<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

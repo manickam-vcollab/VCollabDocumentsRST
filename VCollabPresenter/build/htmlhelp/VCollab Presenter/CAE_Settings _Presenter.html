@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAE Settings</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Scale Factor" href="ScaleFactor.html" />
+    <link rel="prev" title="CAE Result Options" href="CAE_Result_Options_Pre.html" />
+
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          VCollabPresenter</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPresenter</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">CAE Settings</a><ul>
+<li><a class="reference internal" href="#legend-settings">Legend Settings</a></li>
+<li><a class="reference internal" href="#edit-legend">Edit Legend</a></li>
+<li><a class="reference internal" href="#hotspot-finder-panel">Hotspot Finder Panel</a></li>
+<li><a class="reference internal" href="#vector-plot">Vector Plot</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="CAE_Result_Options_Pre.html" title="Previous Chapter: CAE Result Options"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; CAE Result Options</span>
+    </a>
+  </li>
+  <li>
+    <a href="ScaleFactor.html" title="Next Chapter: Scale Factor"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Scale Factor &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="cae-settings">
+<h1>CAE Settings</h1>
+<p>CAE settings found in the context menu have four different tabs to help
+users edit legend settings, find hotspots and modify settings for vector
+plot.</p>
+<p>The four tabs found in CAE settings panel are:</p>
+<ul class="simple">
+<li><strong>Legend Settings :</strong> Users can edit min and max of Legend values and
+to apply for current or all frames.</li>
+<li><strong>Edit Legend:</strong> Users can modify the number of colors, precision
+values and display format.</li>
+<li><strong>Hotspot Finder:</strong> Users can set up hotspot finder constraints.</li>
+<li><strong>Vector Plot Settings:</strong> Users can modify settings for Vector Plot</li>
+</ul>
+<p>Note: Vector Plot features are available from 2010 R1 Version on wards
+and requires license.</p>
+<blockquote>
+<div>Contact <strong>sales&#64;vcollab.com</strong> to upgrade these features.</div></blockquote>
+<div class="section" id="legend-settings">
+<h2>Legend Settings</h2>
+<p><img alt="image0" src="../_images/CAE_legend_settings_dialog.png" /></p>
+<p>The various fields and options found under the Legend Settings tab are
+explained below</p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a href="#id1"><span class="problematic" id="id2">**</span></a>Min **</td>
+<td>Specify/Change the min value in the range.</td>
+</tr>
+<tr class="row-even"><td><a href="#id3"><span class="problematic" id="id4">**</span></a>Max **</td>
+<td>Specify/Change the max value in the range.</td>
+</tr>
+<tr class="row-odd"><td><strong>Filter Color</strong></td>
+<td>Applies the palette colors only for the values within the min max range. Out of bound values are applied with filter color</td>
+</tr>
+<tr class="row-even"><td><strong>Filter Parts</strong></td>
+<td>If true, parts beyond result range will be hidden</td>
+</tr>
+<tr class="row-odd"><td><strong>All Instances</strong></td>
+<td>Applies the min/max changes to all instances.</td>
+</tr>
+<tr class="row-even"><td><strong>Color Plot</strong></td>
+<td>Applies/Removes color plot. The Model will be shown in material color if this option is off.</td>
+</tr>
+<tr class="row-odd"><td><strong>Min&amp;Max</strong></td>
+<td>Shows Min and Max value labels attached to corresponding nodes.</td>
+</tr>
+<tr class="row-even"><td><strong>Update Color Plot on Show/Hide Parts</strong></td>
+<td>Updates color palette and its values while hiding / showing parts.</td>
+</tr>
+<tr class="row-odd"><td><strong>Legend Headers</strong></td>
+<td>Show / Hides Legend Headers, Model Name, Result Name and Instance Name.</td>
+</tr>
+<tr class="row-even"><td><strong>Apply</strong></td>
+<td>Applies the modifications.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#id5"><span class="problematic" id="id6">**</span></a>Steps to Change Legend Settings **</p>
+<ul>
+<li><p class="first">Select the <strong>CAE Settings</strong> option from the viewer context menu or
+click <img alt="image1" src="../_images/CAE_icon.jpg" /> or</p>
+<blockquote>
+<div><p>Double click either on the viewer color palette or on the result
+color box in the viewer to open up this dialog.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Select <strong>Legend Settings</strong> tab.</p>
+</li>
+<li><p class="first">Select the Min and <strong>Max</strong> option and change the range if necessary.</p>
+</li>
+<li><p class="first">Select <strong>Filter</strong> color option to differentiate user defined range.</p>
+</li>
+<li><p class="first">Select a filter color which is different from colors in the palette.</p>
+</li>
+<li><p class="first">Select <strong>Filter Parts</strong> to hide parts which are beyond user range.</p>
+</li>
+<li><p class="first">Select <strong>All Instances</strong> option to update the changes to all
+instances.</p>
+</li>
+<li><p class="first">Select <strong>Min &amp; Max</strong> option to display min and max value of current
+result as labels.</p>
+</li>
+<li><p class="first">Select <strong>Color Plot</strong> option to apply or remove color plot on the
+model.</p>
+</li>
+<li><p class="first">Select <strong>Update Visible Parts Color Plot</strong> to update the color
+palette and contour when modifying part visibility.</p>
+</li>
+<li></li>
+</ul>
+</div>
+<div class="section" id="edit-legend">
+<h2>Edit Legend</h2>
+<p><img alt="image2" src="../_images/Presenter_edit_legend.png" /></p>
+<p>The various fields and options available in the Edit Legend tab are
+explained below</p>
+<blockquote>
+<div><table border="1" class="docutils align-default">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Palette</strong></td>
+<td>Choose the colors to be applied on the
+model.</td>
+</tr>
+<tr class="row-even"><td><strong>Auto</strong></td>
+<td>Allows the application to compute text
+format precision and scientific values.
+Precision and scientific options are
+disabled when ‘Auto’ option is enabled.</td>
+</tr>
+<tr class="row-odd"><td><strong>Scientific</strong></td>
+<td>Displays the legend values in
+scientific format.</td>
+</tr>
+<tr class="row-even"><td><strong>Precision</strong></td>
+<td>Select the decimal places for contour
+values</td>
+</tr>
+<tr class="row-odd"><td><strong>Font Size</strong></td>
+<td>Change the font size.</td>
+</tr>
+<tr class="row-even"><td><strong>No Result Color</strong></td>
+<td>Select a color to denote no result
+data. Default color is grey.</td>
+</tr>
+<tr class="row-odd"><td><strong>Transparency</strong></td>
+<td>Allows user to invert the transparency
+and to clear the transparency.</td>
+</tr>
+<tr class="row-even"><td><strong>Background</strong></td>
+<td>Enable and set background color.</td>
+</tr>
+<tr class="row-odd"><td><strong>Frame Info</strong></td>
+<td>Display/Hide frame information</td>
+</tr>
+<tr class="row-even"><td><strong>Orientation</strong></td>
+<td>Choose the orientation of the legend -
+left, right, top or bottom of the view
+port.</td>
+</tr>
+<tr class="row-odd"><td><strong>Undeformed Mesh Mode</strong></td>
+<td>Change Undeformed Mesh Mode and its
+color.</td>
+</tr>
+<tr class="row-even"><td><strong>Contour Lines</strong></td>
+<td>Select contour lines color.</td>
+</tr>
+<tr class="row-odd"><td><strong>Show</strong></td>
+<td>Show/Hide Legend palette.</td>
+</tr>
+<tr class="row-even"><td><strong>Reverse</strong></td>
+<td>Reverse the legend values against the
+color palette.</td>
+</tr>
+<tr class="row-odd"><td><strong>Discrete</strong></td>
+<td>Switch to discrete fringe bands in
+color plot.</td>
+</tr>
+<tr class="row-even"><td><strong>Update All Viewpoints</strong></td>
+<td>Update the changes to all available
+viewpoints.</td>
+</tr>
+<tr class="row-odd"><td><strong>Custom Range</strong></td>
+<td>Switch to customized range palette and
+color plot.</td>
+</tr>
+<tr class="row-even"><td><strong>Apply</strong></td>
+<td>Apply the changes to the viewer.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Steps to edit legend using Edit Legend tab</strong></p>
+<ul class="simple">
+<li>Select CAE Settings from the viewer context menu or click <img alt="image3" src="../_images/CAE_icon.jpg" /> .</li>
+<li>Select <strong>Edit Legend</strong> tab.</li>
+<li>Select the number of colors from the <strong>Palette</strong> drop down</li>
+<li>Users can select predefined sets of color to view CAE results as
+viewed in native CAE software.</li>
+<li>Click any color in the palette to change.</li>
+<li>Check <strong>Scientific</strong> option to toggle display format between
+scientific and standard decimal mode. Default is Standard display
+format.</li>
+<li>Increase or decrease precision values for both scientific and
+standard display format.</li>
+<li>No Result color is grey by default. Users can change it too.</li>
+<li>Click the <strong>Frame Info</strong> option to toggle displaying frame
+information in the left bottom of the viewer.</li>
+<li>Select left or right or top or bottom under placement dropdown to
+place the legend.</li>
+</ul>
+<p>Select <strong>Wire Frame</strong> to view Undeformed mesh in Wireframe mode or
+select ‘Transparent’ to view Undeformed mesh in transparent mode.</p>
+<ul class="simple">
+<li>Select <strong>User Color</strong> or <strong>Palette Color</strong> option for contour lines.</li>
+<li>Click <strong>Discrete</strong> to toggle between continuous or discrete color
+plot.</li>
+<li>Click the <strong>Apply</strong> button to apply the above changes.</li>
+</ul>
+<p><strong>Note:</strong></p>
+<blockquote>
+<div><p>Palette has predefined color sets for CAE files, which are supported
+by VMoveCAE as in native CAE software.</p>
+<p>This helps users to view results of CAE files in VCollab Pro in the
+same way as viewed in the native software.</p>
+<p>Double Clicking on the legend color palette (including No Result
+color box) inside the viewer opens up CAE Settings Dialog with
+<strong>Edit Legend</strong> tab.</p>
+</div></blockquote>
+<p><strong>What is a custom range and how to use it?</strong></p>
+<p>Legend palette values are divided evenly by <strong>*n*</strong> number of colors.
+Here length of any two consecutive ranges is constant and interpolated
+linearly.</p>
+<p>Custom range allows users to define any length for any range but with
+certain limitations.</p>
+<ul class="simple">
+<li>Length of any range should be less than length of min and max.</li>
+<li>Users are not allowed to edit extreme values as is possible in Legend
+settings.</li>
+<li>The value as modified by the user should be between predecessor and
+successor values.</li>
+<li>If there are blanks in the palette values, it will be interpolated
+linearly by default.</li>
+</ul>
+<p><strong>Steps for Custom Range usage:</strong></p>
+<ul>
+<li><p class="first">Click <strong>Custom Range</strong> in the Edit Legend tab to enable.</p>
+<p><img alt="image4" src="../_images/Legend_custom_range.png" /></p>
+</li>
+<li><p class="first">Click the browse button next to <strong>Custom Range</strong> to open the custom
+range dialog box</p>
+<p><img alt="image5" src="../_images/Custom_range.png" /></p>
+<p>Change any value out of extreme values.</p>
+<p><img alt="image6" src="../_images/Custom_range_edit.png" /></p>
+</li>
+<li><p class="first">Click <strong>Apply</strong>.</p>
+</li>
+<li><p class="first">A warning message is displayed saying “Values should be in descending
+order”.</p>
+<p><img alt="image7" src="../_images/Custom_range_error_box.png" /></p>
+<p>Change some values and leave some blanks in the palette.</p>
+<p><img alt="image8" src="../_images/Custom_range_blank.png" /></p>
+</li>
+<li><p class="first">Click <strong>Apply</strong> and notice that blanks are filled by interpolation.</p>
+<p><img alt="image9" src="../_images/Custom_range_interpolated.png" /></p>
+</li>
+<li><p class="first">Click <strong>OK</strong></p>
+</li>
+<li><p class="first">Click <strong>Apply</strong>.</p>
+</li>
+<li><p class="first">Notice the changes in the color plot of the model according to the
+new custom range palette.</p>
+<p><img alt="image10" src="../_images/Custom_range_default_color_plot.jpg" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="hotspot-finder-panel">
+<h2>Hotspot Finder Panel</h2>
+<p><img alt="image11" src="../_images/Hotspot_finder_panel.png" /></p>
+<p>The various fields and options available in the Hotspot finder panel are
+explained below</p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Find</strong></td>
+<td>Allows users to select a mechanism either Hotspots or Min/Max</td>
+</tr>
+<tr class="row-even"><td><strong>Min</strong></td>
+<td>Set minimum of the range.</td>
+</tr>
+<tr class="row-odd"><td><strong>Max</strong></td>
+<td>Setmaximum of the range.</td>
+</tr>
+<tr class="row-even"><td><strong>Top</strong></td>
+<td>Find top ‘n’ result values.</td>
+</tr>
+<tr class="row-odd"><td><strong>Bottom</strong></td>
+<td>Find bottom ‘n’ result values.</td>
+</tr>
+<tr class="row-even"><td><strong>All Top</strong></td>
+<td>Includes all same top values and its IDs.</td>
+</tr>
+<tr class="row-odd"><td><strong>All Bottom</strong></td>
+<td>Includes all same bottom values and its IDs.</td>
+</tr>
+<tr class="row-even"><td><strong>Zone Radius</strong></td>
+<td>Skip an area around already found hotspots.</td>
+</tr>
+<tr class="row-odd"><td><strong>Visible Surfaces</strong></td>
+<td>Consider visible labels only.</td>
+</tr>
+<tr class="row-even"><td><strong>Probe Label Settings</strong></td>
+<td>Modify probe label settings.</td>
+</tr>
+<tr class="row-odd"><td><strong>Compare Options</strong></td>
+<td>This option is visible if at least one file is merged with existing one. It will open a dialog box with compare options.</td>
+</tr>
+<tr class="row-even"><td><strong>Add Viewpoints</strong></td>
+<td>Generates viewpoints according to viewpoint options if enabled.</td>
+</tr>
+<tr class="row-odd"><td><strong>Export</strong></td>
+<td>Exports the viewpoints into either VPT file or Microsoft PPT file</td>
+</tr>
+<tr class="row-even"><td><strong>View Point Options</strong></td>
+<td>Provides various options to include or exclude different type of viewpoints</td>
+</tr>
+<tr class="row-odd"><td><strong>Find Hotspots</strong></td>
+<td>Generates viewpoints for the model according to above information</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vector-plot">
+<h2>Vector Plot</h2>
+<p><img alt="image12" src="../_images/Vector_plot_panel.png" /></p>
+<p>The various fields and options available int he Vector Plot tab are
+explained below.</p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Vector Plot</strong></td>
+<td>On/Off switch to plot vectors.</td>
+</tr>
+<tr class="row-even"><td><strong>Derived Vector</strong></td>
+<td>Default derived vector for vector result is Translational and for tensor is Normals.</td>
+</tr>
+<tr class="row-odd"><td><strong>Deformation</strong></td>
+<td>Sets deformed nodal position as starting point of vector.</td>
+</tr>
+<tr class="row-even"><td><strong>Detach Geometry</strong></td>
+<td>Displays vector plot of a part, even if the geometry is hidden.</td>
+</tr>
+<tr class="row-odd"><td><strong>Auto Scale</strong></td>
+<td>Enables Auto Scale for vector plot</td>
+</tr>
+<tr class="row-even"><td><strong>Scale Slider Control</strong></td>
+<td>Allows r unconstrained scaling up or down</td>
+</tr>
+<tr class="row-odd"><td><strong>User Color</strong></td>
+<td>Choose a color from the palette for vector.</td>
+</tr>
+<tr class="row-even"><td><strong>Arrow Size</strong></td>
+<td>Choose any one size out of three.</td>
+</tr>
+<tr class="row-odd"><td><strong>Nodal Position As</strong></td>
+<td>Set nodal position as either start point or end point</td>
+</tr>
+<tr class="row-even"><td><strong>Reverse</strong></td>
+<td>Change the direction of vector</td>
+</tr>
+<tr class="row-odd"><td><strong>Refresh</strong></td>
+<td>Re-computes vector plot.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2023, Visual Collaboration Technologies Inc..<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

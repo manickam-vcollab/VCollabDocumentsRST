@@ -1,0 +1,692 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Create Result using Expression &mdash; VCollab-Document  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/Custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #EDEDED" >
+          
+
+          
+            <a href="../VCollabPresenter.html">
+          
+
+          
+            
+            <img src="../_static/VCollab-Logo-wt.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+              <div class="version">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Version</title>
+</head>
+<body>
+    
+    <span class="version">23.2.0
+              </div>
+
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">VCollabPresenter X</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../VCollabPresenter.html">VCollab-Document</a>
+        
+      </nav>
+
+	  <div class="rst-header">
+	  
+	   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" class="rst-header" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../VCollabPresenter.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Create Result using Expression</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+	  
+	  </div>
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+         
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="create-result-using-expression">
+<h1>Create Result using Expression<a class="headerlink" href="#create-result-using-expression" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>This command helps user to create or generate a new CAE result from
+existing results.</p>
+<p>User can compute or create a new CAE result for</p>
+<ul class="simple">
+<li><p>Combining results.</p></li>
+<li><p>Average of two or more results.</p></li>
+<li><p>Difference between two results.</p></li>
+<li><p>Summation of two derived results.</p></li>
+<li><p>Scaled result, etc.</p></li>
+</ul>
+<p>User has to provide an expression or formula with notations available
+with arithmetic operators. New result will have same number of
+instances as other results have.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>The computed new result will be updated to CAE | Result List
+immediately and user can view the result same as other results.</p></li>
+<li><p>Complex results are not supported.</p></li>
+</ul>
+</div>
+<p><strong>Create Result Panel</strong></p>
+<blockquote>
+<div><p><img alt="image1" src="../_images/Create_Result_Panel.png" /></p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 89%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Instances</strong></p></td>
+<td><p>Enables Instance Creation.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Results</strong></p></td>
+<td><p>Column header for existing Results.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Notations</strong></p></td>
+<td><p>Column header for notations. Simple Alphabet Notation which refers to the result in first column. Every result has its own unique alphabet notation.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Result Type</strong></p></td>
+<td><p>Column header which displays result type of corresponding result in first column. It Lists the types of result either Scalar or Vector or Tensor. An acronym in the bracket specifies if the result is of nodal or elemental or element nodal type. N, E and EN refers to nodal, elemental and element nodal respectively.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Use Formula</strong></p></td>
+<td><p>Enter an expression with arithmetic operators, notations and constants.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>New Result Name</strong></p></td>
+<td><p>User has to provide a new name for new result.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Create Result</strong></p></td>
+<td><p>Evaluates the expression in the formula bar and pops up a message “Success” or an error message if any error occurs.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Non-Scalar type results (SixDOF, Vector and Tensor) are highlighted
+in blue color in the list.</p>
+</div>
+<p><strong>Consequence of new result creation</strong></p>
+<blockquote>
+<div><p>Creation of new CAE result</p>
+<ul class="simple">
+<li><p>A message will be popped up with message “New result is created
+and added successfully”.</p></li>
+<li><p>New Result Name will be added to the CAE | Result List panel
+as well as  this panel.</p></li>
+<li><p>New Result contains same number instances as any other result
+have.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Mouse Click Events</strong></p>
+<blockquote>
+<div><p>Double click on  a notation:</p>
+<ul class="simple">
+<li><p>This event copies the notation clicked and pastes in the
+formula bar.</p></li>
+</ul>
+<p>Right mouse click on a non-scalar result:</p>
+<ul>
+<li><p>This event drops down a context menu</p></li>
+<li><p>The context menu lists a set of derived result names based on
+the result type of selected CAE result.</p></li>
+<li><p>The user selected derived result name will be added at the end
+of result list temporarily for computation.</p></li>
+<li><p>The added derived result name is of the form, “Result Name -
+Derived result name” (Eg. Displacement-Translational
+Magnitude).</p></li>
+<li><p>Notation and result type will be created automatically. But
+this is a temporary addition only.</p></li>
+<li><p>User can use this notation for computation.</p></li>
+<li><p>All the temporary derived result names will be cleared if the
+dialog is refreshed.</p>
+<p>Context Menu for Six Degrees of Freedom result</p>
+<blockquote>
+<div><blockquote>
+<div><p><img alt="image2" src="../_images/Create_Result_Context_6DOF.png" /></p>
+</div></blockquote>
+<p>Context Menu for Vector</p>
+<blockquote>
+<div><p><img alt="image3" src="../_images/Create_Result_Context_Vector.png" /></p>
+</div></blockquote>
+<p>Context Menu for Tensor</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/Create_Result_Context_tensor.png"><img alt="image4" src="../_images/Create_Result_Context_tensor.png" style="width: 405px; height: 635px;" /></a></p>
+</div></blockquote>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>List of Operators</strong></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 48%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Addition</p></td>
+<td><p>‘ + ‘</p></td>
+</tr>
+<tr class="row-even"><td><p>Subtraction</p></td>
+<td><p>‘ - ‘</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multiply</p></td>
+<td><p>‘ * ‘</p></td>
+</tr>
+<tr class="row-even"><td><p>Division</p></td>
+<td><p>‘ / ‘</p></td>
+</tr>
+<tr class="row-odd"><td><p>Open bracket</p></td>
+<td><p>‘ ( ‘</p></td>
+</tr>
+<tr class="row-even"><td><p>Close bracket</p></td>
+<td><p>‘ ) ‘</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cosine Functions</p></td>
+<td><p>sin[ ], cos[ ], tan[ ], log[ ]</p></td>
+</tr>
+<tr class="row-even"><td><p>Square and Square root functions</p></td>
+<td><p>sqr[ ], sqt[ ]/sqrt[ ]</p></td>
+</tr>
+<tr class="row-odd"><td><p>Absolute Function</p></td>
+<td><p>Abs()</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Operands</p>
+<blockquote>
+<div><blockquote>
+<div><p>Create result panel lists a set of notation for results which
+are automatically created. These notations can be used in the
+formula bar.</p>
+<p>Notations will be in capital letters for result creation and in
+small letters for instance creation.</p>
+</div></blockquote>
+<p>The valid operands are of,</p>
+<ul class="simple">
+<li><p>Any alphabet notation which refers to a CAE result in the create
+result dialog.</p></li>
+<li><p>Any constant expression like 233, 0.455.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Syntax for simple expression or formula</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 26%" />
+<col style="width: 65%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>S.No</p></td>
+<td><p>Expression /Formula</p></td>
+<td><p>Description</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>A+B</p></td>
+<td><p>Addition of Results A &amp; B.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>A*B</p></td>
+<td><p>Multiplication of results A &amp; B.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>A-B</p></td>
+<td><p>Subtraction result B from result A</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>A/B</p></td>
+<td><p>Division by result B over result A.</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Sin[B]</p></td>
+<td><p>Sinusoidal result of result B.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>3*A or A*3</p></td>
+<td><p>Scalar Multiplication of result A.</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>A+((-B*C)/(2*D))*cos[B]</p></td>
+<td><p>A typical lengthy expression.</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>-A</p></td>
+<td><p>unary minus ‘-‘ operation on result A</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>A * (-B)</p></td>
+<td><p>Multiplication of  result A and minus of result B.</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>Abs(A+B)</p></td>
+<td><p>Sum the results A and B. compute  absolute result of summed result.</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>Sqr[A]</p></td>
+<td><p>computes the square for each component or derived scalar.</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>Sqt[A]</p></td>
+<td><p>computes the square root for each component or derived scalar.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Function parameters should be inside the square brackets, i.e. [ ]
+for Sin, Cos, Tan, Sqr and Sqt funcitons.</p>
+</div>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><p>The following images describes addition of two results. Note the
+contour color applied on the model and legend values for each result.</p>
+<p>Result one: Reaction Force</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/RF.png"><img alt="image5" src="../_images/RF.png" style="width: 729px; height: 419px;" /></a></p>
+</div></blockquote>
+<p>Result two: External Applied Force</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/EAF.png"><img alt="image6" src="../_images/EAF.png" style="width: 730px; height: 421px;" /></a></p>
+</div></blockquote>
+<p>New Result created: CombineReactionNExternalForce</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/RFandEAF.png"><img alt="image7" src="../_images/RFandEAF.png" style="width: 728px; height: 420px;" /></a></p>
+</div></blockquote>
+</div></blockquote>
+<p><strong>How to add two results and create a new result?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Click ‘Create Result’ icon <a class="reference internal" href="../_images/CreateResult24.png"><img alt="image8" src="../_images/CreateResult24.png" style="width: 24px; height: 24px;" /></a></p></li>
+<li><p>It pops up ‘Create Result’ dialog.</p></li>
+<li><p>Enter the notation for first result in the formula bar, Say ‘A’.</p></li>
+<li><p>Enter the addition operation ‘+’.</p></li>
+<li><p>Enter the corresponding notation for second result Say ‘B’. so the
+expression is ‘A+B’.</p></li>
+<li><p>Enter a name for new result.</p></li>
+<li><p>Click ‘Create Result’.</p></li>
+<li><p>Wait for a message “Successfully created and added”.</p></li>
+<li><p>Computed result will be added to ‘Result List’ dialog.</p></li>
+<li><p>Error message will popup if there is improper expression.</p></li>
+<li><p>Click ‘Result List’ icon <a class="reference internal" href="../_images/Results_List_Panel_icon.png"><img alt="image9" src="../_images/Results_List_Panel_icon.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Result List’ dialog.</p></li>
+<li><p>Click the new name appended to the list and</p></li>
+<li><p>Interpret the results.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>How to find and view the difference between two results?</strong></p>
+<blockquote>
+<div><p>(OR)</p>
+</div></blockquote>
+<p><strong>How to create a new result which refers the difference between two existing CAE results?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Click ‘Create Result’ icon <a class="reference internal" href="../_images/CreateResult24.png"><img alt="image10" src="../_images/CreateResult24.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Create Result’ dialog.</p></li>
+<li><p>Enter the notation for first result in the formula bar, Say ‘A’.</p></li>
+<li><p>Enter the subtraction operation ‘-‘.</p></li>
+<li><p>Enter the corresponding notation for second result Say ‘B’. so the
+expression is ‘A-B’.</p></li>
+<li><p>Enter a name for new result.</p></li>
+<li><p>Click ‘Create Result’.</p></li>
+<li><p>Wait for a message “New result is created and added successfully”.</p></li>
+<li><p>Computed result will be added to ‘Result List ‘ dialog.</p></li>
+<li><p>Error message will popup if there is improper expression.</p></li>
+<li><p>Click ‘Result List’ icon <a class="reference internal" href="../_images/Results_List_Panel_icon.png"><img alt="image11" src="../_images/Results_List_Panel_icon.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Result List’ dialog.</p></li>
+<li><p>Click the new name appended to the list and</p></li>
+<li><p>Interpret the results.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>How to add or multiply a scalar value to the result?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Click  ‘Create Result’ icon <a class="reference internal" href="../_images/CreateResult24.png"><img alt="image12" src="../_images/CreateResult24.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Create Result’ dialog.</p></li>
+<li><p>Enter a constant, say ‘23’ or.</p></li>
+<li><p>Enter the addition operation ‘+’ or multiplication operation ‘ *
+‘.</p></li>
+<li><p>Enter the corresponding notation for second result Say ‘B’. (like
+‘23*B’).</p></li>
+<li><p>Enter a name for new result.</p></li>
+<li><p>Click ‘Create Result’.</p></li>
+<li><p>Wait for a message “New result is created and added successfully”.</p></li>
+<li><p>Computed result will be added to ‘Result List ‘ dialog.</p></li>
+<li><p>Error message will popup if there is improper expression.</p></li>
+<li><p>Click ‘Result List’ icon <a class="reference internal" href="../_images/Results_List_Panel_icon.png"><img alt="image13" src="../_images/Results_List_Panel_icon.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Result List’ dialog.</p></li>
+<li><p>Click the new name appended to the list and</p></li>
+<li><p>Interpret the results.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>How to divide a result by another one?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Click  ‘Create Result’ icon <a class="reference internal" href="../_images/CreateResult24.png"><img alt="image14" src="../_images/CreateResult24.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Create Result’ dialog.</p></li>
+<li><p>Enter the notation for first result in the formula bar, Say ‘A’.</p></li>
+<li><p>Enter the addition operation ‘/’.</p></li>
+<li><p>Enter the corresponding notation for second result Say ‘B’. so the
+expression is ‘A/B’.</p></li>
+<li><p>Enter a name for new result.</p></li>
+<li><p>Click ‘Create Result’.</p></li>
+<li><p>Wait for a message “New result is created and added successfully”.</p></li>
+<li><p>Computed result will be added to ‘CAE | Result List ‘ dialog.</p></li>
+<li><p>Error message will popup if there is improper expression.</p></li>
+<li><p>Click ‘Result List’ icon <a class="reference internal" href="../_images/Results_List_Panel_icon.png"><img alt="image15" src="../_images/Results_List_Panel_icon.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Result List’ dialog.</p></li>
+<li><p>Click the new name appended to the list and</p></li>
+<li><p>Interpret the results.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Users are recommended to take more care while handling the
+operator ‘/’, and make assure that divider is not zero.</p></li>
+<li><p>if divider = 0, then it leads to in-appropriate results.</p></li>
+</ul>
+</div>
+<p><strong>How to use sin or cosine functions in the formula?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Click  ‘Create Result’ icon <a class="reference internal" href="../_images/CreateResult24.png"><img alt="image16" src="../_images/CreateResult24.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Create Result’ dialog.</p></li>
+<li><p>User can either use functions for constant or a variable.</p></li>
+<li><p>For example, Sin[0.23], Log[B], Cos[A-B].</p></li>
+<li><p>Enter a name for new result.</p></li>
+<li><p>Click ‘Create Result’.</p></li>
+<li><p>Wait for a message “New result is created and added successfully”.</p></li>
+<li><p>Computed result will be added to ‘CAE | Result List ‘ dialog.</p></li>
+<li><p>Error message will popup if there is improper expression.</p></li>
+<li><p>Click ‘Result List’ icon <a class="reference internal" href="../_images/Results_List_Panel_icon.png"><img alt="image17" src="../_images/Results_List_Panel_icon.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Result List’ dialog.</p></li>
+<li><p>Click the new name appended to the list and</p></li>
+<li><p>Interpret the results.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Function parameters should be inside the <strong>square</strong> brackets.</p></li>
+</ul>
+</div>
+<p><strong>How to use absolute functions in the formula?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Click  ‘Create Result’ icon <a class="reference internal" href="../_images/CreateResult24.png"><img alt="image18" src="../_images/CreateResult24.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Create Result’ dialog.</p></li>
+<li><p>User can use either of the following syntax styles.</p>
+<ul>
+<li><p>Abs(), ABS(), abs().</p></li>
+</ul>
+</li>
+<li><p>For example, Abs(A+0.5*B) or simply Abs(B).</p></li>
+<li><p>Enter a name for new result.</p></li>
+<li><p>Click ‘Create Result’.</p></li>
+<li><p>Wait for a message “New result is created and added successfully”.</p></li>
+<li><p>Computed result will be added to ‘CAE | Result List ‘ dialog.</p></li>
+<li><p>Error message will popup if there is improper expression.</p></li>
+<li><p>Click ‘Result List’ icon <a class="reference internal" href="../_images/Results_List_Panel_icon.png"><img alt="image19" src="../_images/Results_List_Panel_icon.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up ‘Result List’ dialog.</p></li>
+<li><p>Click the new name appended to the list and</p></li>
+<li><p>Interpret the results.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Different cases of Result Creation</strong></p>
+<p><strong>Case 1: Creating a new CAE result in a single model.</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Load a cax model, which contains CAE data.</p></li>
+<li><p>Click ‘<em>Create Result’</em> icon <a class="reference internal" href="../_images/CreateResult24.png"><img alt="image20" src="../_images/CreateResult24.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up the panel as below,
+<img alt="image21" src="../_images/Create_Result_Panel.png" /></p></li>
+<li><p>Provide the expression or formula in the <em>Use Formula</em> text box.</p></li>
+<li><p>Expression should be of meaningful with proper notations,
+operators and constants.</p></li>
+<li><p>For example - <em>“A+B/E”</em>.</p></li>
+<li><p>Provide a name for the new result.</p></li>
+<li><p>Click <em>‘Create Result’</em>.</p></li>
+<li><p>It pops up a message box with any one of the following messages,</p></li>
+<li><p>“New Result is created and added successfully” or “_Error! …..”</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Case 2: Creating a new CAE instance in a single model.</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Load a cax model, which contains CAE data.</p></li>
+<li><p>Click ‘<em>Create Result’</em> icon <a class="reference internal" href="../_images/CreateResult24.png"><img alt="image22" src="../_images/CreateResult24.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up the panel.</p></li>
+<li><p>Check <em>‘Instances’</em> option. <em>‘All Results’</em> option will be
+enabled.
+<img alt="image23" src="../_images/Create_Instance_Panel.png" /></p></li>
+<li><p>User can create the new instance to current selected CAE result or
+all results.</p></li>
+<li><p>This can be controlled by the option ‘All Results’</p></li>
+<li><p>Provide the expression or formula in the <em>Use Formula</em> text box.</p></li>
+<li><p>Expression should be of meaningful with notation alphabets,
+operators and constants.</p></li>
+<li><p>For example - <em>“2*a+3*b”</em></p></li>
+<li><p>Provide a name for the new instance.</p></li>
+<li><p>Click <em>‘Create Instance’</em>.</p></li>
+<li><p>It pops up a message box with any one of the following messages</p></li>
+<li><p>“New Instance is created and added successfully” or “_Error!
+…..”</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Case 3: Creating a new CAE result across merged models.</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Load a cax model, which contains CAE data.</p></li>
+<li><p>Merge one or more cax files or models.</p></li>
+<li><p>Click ‘<em>Create Result’</em> icon <a class="reference internal" href="../_images/CreateResult24.png"><img alt="image24" src="../_images/CreateResult24.png" style="width: 24px; height: 24px;" /></a>.</p></li>
+<li><p>It pops up the panel as below.</p></li>
+<li><p>Check the option <em>‘Merged Models’,</em> which opens a combo box of
+merged files as below,
+<img alt="image25" src="../_images/Create_Result_Merged_Panel.png" /></p></li>
+<li><p>Notations changes accordingly with an extension of model number.
+<em>‘A1’</em> refers to the first result of model 1 and <em>‘B2’</em> refers to
+the second result of model 2.</p></li>
+<li><p>User can create the new instance to current selected CAE result or
+all results.</p></li>
+<li><p>This can be controlled by the option ‘All Results’.</p></li>
+<li><p>Provide the expression or formula in the <em>Use Formula</em> text box.</p></li>
+<li><p>Expression should be of meaningful with notation alphabets,
+operators and constants.</p></li>
+<li><p>For example - <em>“B2-B1”</em></p></li>
+<li><p>Provide a name for the new result.</p></li>
+<li><p>Click <em>‘Create Result’</em>.</p></li>
+<li><p>It pops up a message box with any one of the following messages</p></li>
+<li><p>“New Result is created and added successfully”</p></li>
+<li><p>“_Error! …..”</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Examples</strong></p>
+<blockquote>
+<div><p>The following images describes addition of two results.</p>
+<ul>
+<li><p>Notice the contour of Result one: Reaction Force</p>
+<p><a class="reference internal" href="../_images/RF.png"><img alt="image26" src="../_images/RF.png" style="width: 729px; height: 419px;" /></a></p>
+</li>
+<li><p>Notice the contour of Result two: External Applied Force</p>
+<p><a class="reference internal" href="../_images/EAF.png"><img alt="image27" src="../_images/EAF.png" style="width: 730px; height: 421px;" /></a></p>
+</li>
+<li><p>View the contour of New Result :CombineReactionNExternalForce</p>
+<p><a class="reference internal" href="../_images/RFandEAF.png"><img alt="image28" src="../_images/RFandEAF.png" style="width: 728px; height: 420px;" /></a></p>
+</li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Visual Collaboration Technologies Inc..
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+  
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-736729-4"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-736729-4');
+</script>
+	    
+</body>
+</html>

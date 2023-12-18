@@ -1,0 +1,432 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Py Tools &mdash; VCollab-Document  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/Custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Report Template Editor GUI" href="../ReportCMDEditor/Template_Editor_GUI.html" />
+    <link rel="prev" title="Python Utilities" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #EDEDED" >
+          
+
+          
+            <a href="../../VCollabProX.html">
+          
+
+          
+            
+            <img src="../../_static/VCollab-Logo-wt.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+              <div class="version">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Version</title>
+</head>
+<body>
+    
+    <span class="version">23.3
+              </div>
+
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../VCollab%20Pro%20X/index.html">VCollabPro X</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/GUI_Layout.html">GUI Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/System_Requirements.html">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Custom_Toolbar.html">Custom Toolbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/File_Menu.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/View_Menu.html">View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Edit_Menu.html">Edit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Tools_Menu.html">Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/CAE_Menu.html">CAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Find_Parts.html">Find Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Profiles.html">Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/BatchMode.html">Batch Mode</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Python Utilities</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Py Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#report-views">Report Views</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#instance-browser">Instance Browser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-legend">Set Legend</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#find-hotspots">Find Hotspots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#part-hotspots">Part Hotspots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hotspot-table">Hotspot Table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#update-labels">Update Labels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#min-max-xy-plot">Min-Max XY Plot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-si-unit">Set SI Unit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arrange-models">Arrange Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#export-csv-result">Export CSV Result</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#distance-plot">Distance Plot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#blank-view">Blank View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#view2background">View2Background</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-image-views">Import Image Views</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#video-maker">Video Maker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#report-template-edit">Report Template Edit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#createcax-vmove-submit">CreateCAX (VMove Submit)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ReportCMDEditor/Template_Editor_GUI.html">Report Template Editor GUI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ReportCMDEditor/Commands_List.html">List of Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VideoMaker/Template_Editor_GUI.html">Video Template Editor GUI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VideoMaker/Commands_List.html">List of Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VMSubmitEditor/VMoveSubmitHelp.html">GUI to Create CAX using VMoveCAESubmit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VMSubmitEditor/VMoveSubmitExample.html">Example Command File</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Headless_Server.html">Linux - Configuration for Headless Server</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../VCollabProX.html">VCollab-Document</a>
+        
+      </nav>
+
+	  <div class="rst-header">
+	  
+	   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" class="rst-header" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../VCollabProX.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../VCollab%20Pro%20X/index.html">VCollabPro X</a> &raquo;</li>
+        
+          <li><a href="../index.html">Python Utilities</a> &raquo;</li>
+        
+      <li>Py Tools</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="../ReportCMDEditor/Template_Editor_GUI.html" class="btn btn-neutral float-right" title="Report Template Editor GUI" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Python Utilities" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+	  
+	  </div>
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+         
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="py-tools">
+<h1>Py Tools<a class="headerlink" href="#py-tools" title="Permalink to this headline">¶</a></h1>
+<p>VCollab provides <strong>PY Tools</strong>, a custom tools menu which comes with the installer. It can be accessed from the main menu.</p>
+<img alt="../../_images/menu.png" src="../../_images/menu.png" />
+<p>Py Tools contains a set of utility functions which are associated with a set of python scripts. The description of association between each function name and corresponding Python script is to be defined in a specific format in a file <strong>&lt;VCOLLAB_DIR&gt;/VCollabProX/VCollabStdPyTools.csv</strong>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#VCollab_Python_INTERFACE,</span>
+<span class="n">GUI</span> <span class="n">Mode</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<span class="n">PY_Tools</span><span class="p">,</span>
+<span class="n">Report</span> <span class="n">Views</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">ReportViews</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Instance</span> <span class="n">Browser</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">Instance_Browser</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Set</span> <span class="n">Legend</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">set_legend_Json</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Find</span> <span class="n">Hotspots</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">FindHotspots</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Part</span> <span class="n">Hotspots</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">PartHotspots</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Hotspot</span> <span class="n">Table</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">HotspotTable</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Update</span> <span class="n">Labels</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">Update_Labels</span><span class="o">.</span><span class="n">py</span>
+<span class="n">MinMax</span> <span class="n">XYPlot</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">MinMaxXYPlot</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Set</span> <span class="n">SI</span> <span class="n">Unit</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">setUNITS_SI</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Arrange</span> <span class="n">Models</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">ArrangeModels</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Export</span> <span class="n">CSV</span> <span class="n">Result</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">ExportResults2CSV</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Distance</span> <span class="n">Plot</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">TrackDistPlot</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Blank</span> <span class="n">View</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">Blankview</span><span class="o">.</span><span class="n">py</span>
+<span class="n">View2Background</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">View2Background</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Import</span> <span class="n">Image</span> <span class="n">Views</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">PyTool_Scripts</span>\<span class="n">ImportImageViews</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Video</span> <span class="n">Maker</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">VideoMaker</span>\<span class="n">Video_Make</span><span class="o">.</span><span class="n">py</span>
+<span class="n">Report</span> <span class="n">Template</span> <span class="n">Editor</span><span class="p">,</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">CMD_Editor</span>\<span class="n">VCTemplateEditor</span><span class="o">.</span><span class="n">py</span>
+<span class="n">CreateCAX</span> <span class="p">(</span><span class="n">VMove</span> <span class="n">Submit</span><span class="p">),</span><span class="o">%</span><span class="n">VCOLLAB_DIR</span><span class="o">%</span>\<span class="n">VCollabProX</span>\<span class="n">PYTools</span>\<span class="n">VMoveSubmit_ParamsEditor</span>\<span class="n">VMSubmit_ParamsGUI</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>The following set of functions are provided in this release.</p>
+<img alt="../../_images/menu_pytools.png" src="../../_images/menu_pytools.png" />
+<div class="section" id="report-views">
+<h2>Report Views<a class="headerlink" href="#report-views" title="Permalink to this headline">¶</a></h2>
+<p>This function (script) creates a set of ViewPoints based on analysis type.</p>
+<p>For loadcase analysis (Linear/Transient), the <em>HotSpot Views Options</em> dialog asks user to select results and specify the number of hotspots. Maximum instance hotspot views are created for each selected result.</p>
+<img alt="../../_images/report_views_hs.png" src="../../_images/report_views_hs.png" />
+<img alt="../../_images/report_views_hs_vps.png" src="../../_images/report_views_hs_vps.png" />
+<p>For modal analysis, the <em>Modal Report Options</em> dialog asks user inputs to create modal animation ViewPoints. User can select animation parameters and add a summary ViewPoint with frequency table. The <em>Create Hotspot ViewPoints</em> checkbox opens the <em>HotSpot Views Options</em> dialog and user can create additional hotspot views.</p>
+<img alt="../../_images/report_views_modal.png" src="../../_images/report_views_modal.png" />
+<img alt="../../_images/report_views_modal_vps.png" src="../../_images/report_views_modal_vps.png" />
+</div>
+<div class="section" id="instance-browser">
+<h2>Instance Browser<a class="headerlink" href="#instance-browser" title="Permalink to this headline">¶</a></h2>
+<p>This script reads all the instances for the active derived result type and creates a table as shown in the image below.</p>
+<img alt="../../_images/instance_browser_01.png" src="../../_images/instance_browser_01.png" />
+<p>Instances can be sorted by maximum or minimum value. User can select any row in table to display that instance. The <em>Hide Selected</em> button hides the selected row. <em>Show All</em> button can be used to show all rows including the hidden ones. <em>Delete All Hidden</em> deletes hidden rows and corresponding instances from the CAX. Table max/min values can be plotted in a graph by selecting the graph options.</p>
+<a class="reference internal image-reference" href="../../_images/instance_browser_02.png"><img alt="../../_images/instance_browser_02.png" src="../../_images/instance_browser_02.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="set-legend">
+<h2>Set Legend<a class="headerlink" href="#set-legend" title="Permalink to this headline">¶</a></h2>
+<p>This script helps to easily modify the legend for the current plot. In the tab <em>Legend Settings</em> legend properties like Max-Min values, PreMax-PreMin values, Transperancy, Precision, etc. can be changed.</p>
+<img alt="../../_images/set_legend_json_01.png" src="../../_images/set_legend_json_01.png" />
+<p>In the tab <em>Save/Load Options</em>, user can save current legend settings into a .json file. By default the location is same as Profile Path. User can enter a name in the <em>Name</em> field and click on <em>Save</em> to save current legend settings in the json file. Multiple such settings can be saved. All such saved settings are listed in the <em>Saved Legends List</em>. On selecting an item from the <em>Saved Legends List</em>, user can click <em>Load and Apply</em> to apply settings to the current display(current Model). The <em>Delete</em> button can be used to delete an item from the <em>Saved Legends List</em>.</p>
+<img alt="../../_images/set_legend_json_02.png" src="../../_images/set_legend_json_02.png" />
+<p>If the same legend settings are to be applied to different ViewPoints, user can go to the <em>VP Options</em> tab, select a ViewPath from the dropdown and select multiple ViewPoints. On clicking <em>Apply to VP(s)</em>, the current legend settings are applied to the selected ViewPoints. If result for the selected item does not match the result in selected ViewPoint, an error message will inform the user about the mismatch.</p>
+<img alt="../../_images/set_legend_json_03.png" src="../../_images/set_legend_json_03.png" />
+<p><em>Set Result Range Params</em> are model specific parameters. Example: Premin and Premax values for legend. User can select or unselect depending on the the model to which legend settings are applied. <em>Same Result Type</em> checkbox applies the legend settings only to same result type. Example: If the saved result type of saved legend settings is Displacement then the legend settings are applied only to displacement type results.</p>
+</div>
+<div class="section" id="find-hotspots">
+<h2>Find Hotspots<a class="headerlink" href="#find-hotspots" title="Permalink to this headline">¶</a></h2>
+<p>This script helps to automatically create hotspot notes according to user inputs. It takes user inputs for the currently displayed result and instance as shown below. In this dialog box user can specify:</p>
+<ul class="simple">
+<li><p>Legend Max, Min values to highlight specific range of values</p></li>
+<li><p>Option to filter parts and associated limit</p></li>
+<li><p>Top/Bottom hotspot option (if <em>Top</em> checkbox is checked then top option is set, else bottom option)</p></li>
+<li><p>Number of hotspots</p></li>
+</ul>
+<img alt="../../_images/find_hotspots.png" src="../../_images/find_hotspots.png" />
+<p>When <em>Apply</em> button is clicked, hotspots are displayed based on user selected probe settings. If <em>Filter Parts</em> option is selected then the parts with result value outside the filter limits are hidden (filter limits top or bottom is set based on the hotspot option).</p>
+</div>
+<div class="section" id="part-hotspots">
+<h2>Part Hotspots<a class="headerlink" href="#part-hotspots" title="Permalink to this headline">¶</a></h2>
+<p>This script creates probes at minimum and/or maximum location for each individual parts that are currently displayed. The settings for finding hotspots in the <em>Hotspot Settings</em> dockable dialog such as the number of top and bottom hotspots, Zone Radius, etc. are followed. These are then applied to each visible part to create probes.</p>
+</div>
+<div class="section" id="hotspot-table">
+<h2>Hotspot Table<a class="headerlink" href="#hotspot-table" title="Permalink to this headline">¶</a></h2>
+<p>This script creates a 2D table with Node ID, Part ID, Position(X,Y,Z) and result value for the probed labels. User can also specify the location for the table.</p>
+<img alt="../../_images/hotspot_table_01.png" src="../../_images/hotspot_table_01.png" />
+<a class="reference internal image-reference" href="../../_images/hotspot_table_02.png"><img alt="../../_images/hotspot_table_02.png" src="../../_images/hotspot_table_02.png" style="width: 600px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use similar probe types (Derived or All result). It does not work for multi-model comparison tables.</p>
+</div>
+</div>
+<div class="section" id="update-labels">
+<h2>Update Labels<a class="headerlink" href="#update-labels" title="Permalink to this headline">¶</a></h2>
+<p>This function updates all labels with latest label settings. User can update labels in the <em>Current View</em> or <em>ALL VP</em> (for all ViewPoints).</p>
+<img alt="../../_images/update_labels.png" src="../../_images/update_labels.png" />
+</div>
+<div class="section" id="min-max-xy-plot">
+<h2>Min-Max XY Plot<a class="headerlink" href="#min-max-xy-plot" title="Permalink to this headline">¶</a></h2>
+<p>This script creates MinMax XY Plot for currently displayed result.</p>
+<a class="reference internal image-reference" href="../../_images/Min_Max_XYPlot.png"><img alt="../../_images/Min_Max_XYPlot.png" src="../../_images/Min_Max_XYPlot.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="set-si-unit">
+<h2>Set SI Unit<a class="headerlink" href="#set-si-unit" title="Permalink to this headline">¶</a></h2>
+<p>This function sets Units (SI) for all common result types (Results Option Dialog). These are for display purpose only.</p>
+<img alt="../../_images/set_SI_units.png" src="../../_images/set_SI_units.png" />
+</div>
+<div class="section" id="arrange-models">
+<h2>Arrange Models<a class="headerlink" href="#arrange-models" title="Permalink to this headline">¶</a></h2>
+<p>This function arranges all merged models evenly spaced rows. If the CAX does not have multiple models, all visible parts (max. 25) are displayed in a grid.</p>
+<img alt="../../_images/arrange_models_01.png" src="../../_images/arrange_models_01.png" />
+<img alt="../../_images/arrange_models_02.png" src="../../_images/arrange_models_02.png" />
+</div>
+<div class="section" id="export-csv-result">
+<h2>Export CSV Result<a class="headerlink" href="#export-csv-result" title="Permalink to this headline">¶</a></h2>
+<p>This function exports current result instance into a csv file. User can select either from parts or nodesets. The <em>Nodesets</em> tab is greyed out if no nodesets are defined. User can choose multiple results and instances. The results are saved in the CSV file. The <em>Dump Option</em> writes the CSV with the header <em>#VCOLLAB_RESULTS_DUMP</em>.</p>
+<img alt="../../_images/export_CSV_results_01.png" src="../../_images/export_CSV_results_01.png" />
+<img alt="../../_images/export_CSV_results_02.png" src="../../_images/export_CSV_results_02.png" />
+</div>
+<div class="section" id="distance-plot">
+<h2>Distance Plot<a class="headerlink" href="#distance-plot" title="Permalink to this headline">¶</a></h2>
+<p>This function helps to find or trace the distance between any two nodes among all time steps. Clicking this item, an input dialog prompts for any two node IDs. Input dialog takes first two node ids from probe tables if they are available. Otherwise user has to enter the node IDs manually.</p>
+<img alt="../../_images/Distance_Plot_Dlg1.png" src="../../_images/Distance_Plot_Dlg1.png" />
+<p>On clicking <em>OK</em>, an XYPlot with a single curve which represents the distance between given nodes is created.</p>
+<img alt="../../_images/Distance_Plot_View1.png" src="../../_images/Distance_Plot_View1.png" />
+</div>
+<div class="section" id="blank-view">
+<h2>Blank View<a class="headerlink" href="#blank-view" title="Permalink to this headline">¶</a></h2>
+<p>This function clears the viewer screen in a single click. i.e. it hides all the objects in the ViewPoint. Then the <em>Set Plain background</em> dialog asks user if plain white background is to be set.</p>
+<img alt="../../_images/blankview.png" src="../../_images/blankview.png" />
+</div>
+<div class="section" id="view2background">
+<h2>View2Background<a class="headerlink" href="#view2background" title="Permalink to this headline">¶</a></h2>
+<p>This function takes snap-shop of graphics area and sets that image as 2D background.</p>
+</div>
+<div class="section" id="import-image-views">
+<h2>Import Image Views<a class="headerlink" href="#import-image-views" title="Permalink to this headline">¶</a></h2>
+<p>This function asks for an image folder and adds background image ViewPoints for each image in the folder. User can create images from native post processor or CAD tools and then select this function. Another usecase is that user can export PowerPoint slides as images (png/jpeg) into a folder and then use this function to import all those images as 2D ViewPoints.
+Following folder selection dialog appears.</p>
+<img alt="../../_images/import_image_views_01.png" src="../../_images/import_image_views_01.png" />
+<p>On selecting a folder, the dialog box updates to show all images found in the folder.</p>
+<img alt="../../_images/import_image_views_02.png" src="../../_images/import_image_views_02.png" />
+<p>New ViewPoints are created with selected images set as background. Checking the <em>ImageLabel</em> sets the images as image lables instead of background images. The <em>Plain BG</em> option sets background to plain white.</p>
+<a class="reference internal image-reference" href="../../_images/import_image_views_03.png"><img alt="../../_images/import_image_views_03.png" src="../../_images/import_image_views_03.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="video-maker">
+<h2>Video Maker<a class="headerlink" href="#video-maker" title="Permalink to this headline">¶</a></h2>
+<p>Animations can help to communicate complex geometric feature (Shape / Assembly / Joint / Connections), specific deformations or relative motion between parts and critical hotspot locations in a model. In general, a video should capture part movements, rotation of models or camera, sectional views and CAE animations. High quality animations are created by capturing many frames (images) and then stitching them together. It is a tedious time-consuming task to create these frames manually. To simplify this, a set of commands to capture images from different types of motions or animations is developed using VCollabPro Python API. A set of such commands can be used as a simple text-based template (Video Command Template) for creating videos. <em>Video Template Editor</em> is a GUI based tool to define, modify and run such video command templates.</p>
+<a class="reference internal image-reference" href="../../_images/VideoMaker.png"><img alt="../../_images/VideoMaker.png" src="../../_images/VideoMaker.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="report-template-edit">
+<h2>Report Template Edit<a class="headerlink" href="#report-template-edit" title="Permalink to this headline">¶</a></h2>
+<p>To simplify report automation task, a list of generic commands are developed using VCollabPro python API. A list of such commands (<em>Report Template</em>) can be defined in a text file and a script can create ViewPoints based on these commands. VCollab <em>Report Template Editor</em> is a GUI based tool to define, edit and run such commands or templates.</p>
+<a class="reference internal image-reference" href="../../_images/Report_Template_Editor.png"><img alt="../../_images/Report_Template_Editor.png" src="../../_images/Report_Template_Editor.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="createcax-vmove-submit">
+<h2>CreateCAX (VMove Submit)<a class="headerlink" href="#createcax-vmove-submit" title="Permalink to this headline">¶</a></h2>
+<p><em>VMoveCAESubmit</em> is a tool to convert CAX file from a native CAE file based on the parameters specified in a txt file. This GUI tool is developed to simplify CAX file creation using VMoveCAESubmit. Using this tool user can select or specify list of commands or parameters for File, Result, Parts and Step sections and create VMoveCAESubmit parameter file. This Command parameter file can be run to create and load CAX file in VCollabPro.</p>
+<a class="reference internal image-reference" href="../../_images/VMSubmit_Editor.png"><img alt="../../_images/VMSubmit_Editor.png" src="../../_images/VMSubmit_Editor.png" style="width: 600px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This <em>PY Tools</em> is for common utility functions (may be for company level customization).  For user level customization, user can create same kind of csv file with user defined menu item names and corresponding scripts. Then copy the created csv and script files to the ‘%APPDATA%VCollab’. VCollab looks for any csv file with the proper header and creates the menu in the next application session.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Visual Collaboration Technologies Inc..
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+  
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-736729-4"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-736729-4');
+</script>
+	    
+</body>
+</html>

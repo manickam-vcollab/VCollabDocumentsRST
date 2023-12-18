@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate CAE Report</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="CAE Display" href="CAE%20Display.html" />
+    <link rel="prev" title="Hotspots" href="CAE_Hotspots_Extrema.html" />
+
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          VCollabPresenter</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPresenter</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Generate CAE Report</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="CAE_Hotspots_Extrema.html" title="Previous Chapter: Hotspots"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Hotspots</span>
+    </a>
+  </li>
+  <li>
+    <a href="CAE%20Display.html" title="Next Chapter: CAE Display"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">CAE Display &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="generate-cae-report">
+<h1>Generate CAE Report</h1>
+<p>The Hotspot finder tool helps to find the hotspots in a model. A hotspot
+can be a node, an element or an area in the computational domain with
+extreme values (maximum or minimum) of a result. Local minima, local
+maxima or nodes/elements/areas with high gradients can also be
+considered as hotspots in certain situations. As the definition of
+hotspots can be situational, various mechanisms to identify hotspots are
+provided in VCollab Pro. Users can choose the right mechanism based on
+their understanding of the problem to identify the hotspots.</p>
+<p><strong>Hot Spot Generation</strong></p>
+<p>VCollab uses the concept of viewpoint to store a display state and
+retrieve it and show it to the user. A view point is basically a display
+state. A sequence of view points is termed as a view path in VCollab.
+The automatic hotspot generator in VCollab generates the hot spots as a
+view path. Each viewpoint in this view path can display annotated hot
+spots over a zone of the mesh or over the whole geometry. The procedure
+to generate hotspots automatically is described in the following steps.</p>
+<ol class="arabic">
+<li><p class="first">Load a model, select the desired result (determines the hot spots) in
+the CAE results</p>
+</li>
+<li><p class="first">Click <strong>CAE | CAE Settings</strong> in the context menu.</p>
+</li>
+<li><p class="first">Select <strong>Hotspot Finder</strong> tab to open up <strong>Hotspot Settings</strong> dialog.</p>
+</li>
+<li><p class="first">Select <strong>Hotspots</strong> in the <strong>Find</strong> list box.</p>
+<blockquote>
+<div><p><img alt="image0" src="../_images/Hotspot_extrema.png" /></p>
+</div></blockquote>
+</li>
+</ol>
+<p>The various options and fields that are available under Hotspot finder
+are explained below.</p>
+<ol class="arabic simple">
+<li><strong>Find:</strong> Users can choose from any one option from the drop down
+list</li>
+</ol>
+<ul class="simple">
+<li><strong>Local Extrema :</strong> Under this option, VCollab Pro identifies the
+local maximum or minimum in a node/element within the specified
+zone radius .</li>
+<li><strong>Global Extrema:</strong> Under this option, VCollab Pro identifies the
+nodes or elements with global maximum or minimum values as the
+hotspots.</li>
+</ul>
+<p>To know more about Local and Global Extrema, click here.</p>
+<ol class="arabic">
+<li><p class="first"><strong>Hotspot Range</strong> (Min &amp; Max): When a range is specified, VCollab Pro
+filters the nodes whose result values lie outside this range.
+They are not considered hot spots. Hot spots are searched among
+nodes whose values satisfy the range limits.</p>
+</li>
+<li><p class="first"><strong>Hotspot Count</strong> (Top and Bottom): This option specifies the number
+of hotspots that need to be generated. Hotspots top and bottom
+labels are differentiated by label border colors, which are red
+and blue respectively. Users can change the default colors if
+needed.</p>
+</li>
+<li><p class="first"><strong>All Top:</strong> If the top value is 100 (as an example) and there are
+multiple IDs with the same value, then hotspot finder considers
+and displays only one of these IDs if All Top is unchecked. If
+this option is checked, hotspot finder displays all IDs with the
+same top values.</p>
+</li>
+<li><p class="first"><strong>All Bottom:</strong> This option is similar to the All Top option, except
+that it considers bottom values.</p>
+</li>
+<li><p class="first"><strong>Mark MinMax:</strong> This option highlights the labels of maximum of top
+labels and minimum of bottom labels. Maximum and Minimum labels
+are highlighted with text colors of Red and Blue respectively.</p>
+</li>
+<li><p class="first"><strong>Zone Radius:</strong> The Zone radius option helps to avoid locating hot
+spots next to each other. Once a hotspot is found, VCollab skips
+all the nodes within the specified radius while searching for the
+next hotspot.</p>
+</li>
+<li><p class="first"><strong>Visible Surface:</strong> Displays the visible labels in the current view.</p>
+</li>
+<li><p class="first"><strong>Probe Label Settings:</strong> Allows users to select probe type and
+template and other result attributes.</p>
+<blockquote>
+<div><p><img alt="image1" src="../_images/Probesetting_result_dialog.png" /></p>
+</div></blockquote>
+</li>
+</ol>
+<ul>
+<li><p class="first"><strong>Probe Type:</strong></p>
+<ul class="simple">
+<li>CurrentResult - Derived : current scalar value</li>
+<li>CurrentResult - Full : Displays all components for vector and
+tensor results.</li>
+<li>All Results - Table : Displays user selected scalar result values.</li>
+<li>All Instances - Table : Displays all instance values in a table.</li>
+<li>All Instances - XYPlot :Displays all instance values as a XYPlot
+graph.</li>
+</ul>
+</li>
+<li><p class="first"><strong>Template type:</strong> This option displays values in a predefined
+template (format). Header options are meaningful for template 1
+when at least one dataset is merged with an existing one.</p>
+</li>
+<li><p class="first"><strong>Model:</strong> Selects the model for which results are listed for
+selection.</p>
+</li>
+<li><p class="first"><strong>All Results:</strong> Displays a list of all available results for the
+selected model. To select a result (for probe labels), click on
+it and then press &gt;&gt; button. The selected result will get added
+to the Select Results list.</p>
+</li>
+<li><p class="first"><strong>Selected Results:</strong> Displays a list of all the selected results. To
+deselect a result, click on it and then press &lt;&lt; button. The
+result will be removed from this list and appear under the <strong>All
+Results</strong> list. To rearrange the results order in the labels,
+drag the result and drop where you want to place.</p>
+</li>
+<li><p class="first"><strong>Row Header:</strong> To display either dataset name or result/instance
+name in the first column of the label, check the row header box.
+Each row header shows the result/instance that corresponds to the
+CAE result data</p>
+</li>
+<li><p class="first"><strong>Column Header:</strong> To display either dataset name or result/instance
+name in the top of the labels, check the column header box. Each
+column denotes CAE result data and row denotes the corresponding
+result/instance name.</p>
+<blockquote>
+<div><p><img alt="image2" src="../_images/Probe_Col_header.gif" /></p>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Part Header:</strong> Adds annotated part name into the label.</p>
+</li>
+<li><p class="first"><strong>Header legend:</strong> Displays acronym of the results as a separate
+label.</p>
+</li>
+<li><p class="first"><strong>Abbreviation</strong> <strong>Legend:</strong> Displays the legend or abbreviation and
+its acronym in a table separately. It displays a table for short
+letters for results used in the labels. It can be moved like
+other labels.</p>
+</li>
+<li><p class="first"><strong>ID</strong> : Displays nodal or element ID in the label.</p>
+</li>
+<li><p class="first"><strong>Rank:</strong> Displays rank number based on the hotspot value and number
+of hotspots found.</p>
+</li>
+<li><p class="first"><strong>Rank Ascending Order:</strong> Specifies ranking process to be ascending
+or descending.</p>
+</li>
+<li><p class="first"><strong>Label Settings:</strong> Allows users to format the text and background of
+the label.</p>
+</li>
+<li><p class="first"><strong>Result Options:</strong> Allows users to select and highlight labels based
+on the result values.</p>
+</li>
+<li><p class="first"><strong>Apply</strong> or <strong>OK:</strong> Apply the modifications.</p>
+</li>
+<li><p class="first"><strong>Compare Options :</strong> This option is visible only when at least one
+dataset is merged with existing one. It is used to compare
+results of merged models. Users can select the models to be
+compared with the base model (current model). By default it
+generates hotspots/min max labels for the current model.</p>
+<blockquote>
+<div><p><img alt="image3" src="../_images/Compare_options_GUI.jpg" /></p>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Comparison Field:</strong> The following methods are available to users to
+compare results.</p>
+<blockquote>
+<div><p><strong>*Radius</strong> refers to the default radius and not the user defined
+Zone radius</p>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Position : Nearest -</strong> Compare one hotspot node with a node from
+another model based on position</p>
+<ol class="loweralpha simple">
+<li>Get nearest node from the other model with distance &lt; *Radius</li>
+<li>Select this nearest node for comparison.</li>
+</ol>
+</li>
+<li><p class="first"><strong>Position : Min/Max -</strong> Compare one hotspot node with a node from
+another model based on position</p>
+<ol class="loweralpha simple">
+<li>Get all nodes in the other model with distance &lt; *Radius</li>
+<li>From this set of nodes select one node for comparison</li>
+<li>For top hotspot select the node with Max value</li>
+<li>For bottom hotspot select the node with Min value</li>
+</ol>
+</li>
+<li><p class="first"><strong>ID:</strong> Compare the hot spot node with a node from the other model
+having the same id.</p>
+</li>
+<li><p class="first"><strong>ID : Distance -</strong> Compare the hot spot node with a node from the
+other model having the same id</p>
+<ol class="loweralpha simple">
+<li>AND distance &lt; *Radius</li>
+</ol>
+</li>
+<li><p class="first"><strong>Hotspot: Min/Max-</strong> Compare the hotspot node with a hot spot node
+from the other model by:</p>
+<ol class="loweralpha simple">
+<li>Get all hotspot nodes in the other model with distance &lt; *Radius.</li>
+<li>From this set of hotspots select one hot spot for comparison</li>
+<li>For Top hot spot select the hotspot with Max value</li>
+<li>For Bottom hotspot select the hotspot with Min value.</li>
+</ol>
+</li>
+<li><p class="first"><strong>Hotspot: Nearest-</strong> Compare the hotspot node with a hotspot node from another model.</p>
+<ol class="loweralpha simple">
+<li>Get all hotspot nodes in the other model with distance &lt; *Radius.</li>
+</ol>
+<p>b. From this set of hotspots select the nearest hotspot (of same
+type) for comparison.</p>
+</li>
+<li><p class="first"><strong>Hotspot: Min/Max UseRange-</strong> Compare the hotspot node with a hot spot node from another
+model</p>
+<ol class="loweralpha simple">
+<li>Get all hotspot nodes in another model with distance &lt; Zone radius
+(user defined).</li>
+<li>From this set of hotspots select one hot spot for comparison.</li>
+<li>For Top hotspot select top hotspot with Max value.</li>
+<li>For Bottom hotspot select bottom hot spot with Min value.</li>
+</ol>
+</li>
+<li><p class="first"><strong>Hotspot: Nearest UseRange-</strong> Compare the hotspot node with another hotspot node from the
+other model</p>
+<ol class="loweralpha simple">
+<li>Get all hotspot nodes in another model with distance &lt; Zone radius
+(user defined).</li>
+<li>From this set of hotspots select nearest hotspot (of same type)
+for comparison</li>
+</ol>
+</li>
+<li><p class="first"><strong>Compare With</strong></p>
+<ul class="simple">
+<li>Same Part - Compare using the comparison options specified above
+in the same part of other model.</li>
+<li>Visible Parts - Compare using the compare options specified above
+in all visible parts of the other model.</li>
+<li>All Parts - Compare using the compare options specified above in
+all parts.</li>
+</ul>
+</li>
+<li><p class="first"><strong>Within Distance -</strong> Allows users to specify the distance value and
+hotspots are computed within this range.</p>
+</li>
+<li><p class="first"><strong>Hotspots In All Models</strong>: Finds hotspots for each model. Then it
+appends results from merged models as rows or columns based on
+the template selected.</p>
+</li>
+<li><p class="first"><strong>Show All Connections:</strong> Shows all the connecting lines between the
+label and its attached positions.</p>
+</li>
+<li><p class="first"><strong>Mask :</strong> This option in the Hotspot finder panel, allows users to
+mask a set of nodes and elements from the process. Users can mask
+the nodesets from the hotspot finding process using <a class="reference external" href="https://training.vcollab.com/CAE_NodeSet_Manager_Pro.html" target="_blank">*Node Set
+manager*</a>.</p>
+</li>
+</ul>
+<p><strong>Note:</strong> Masking is not supported for Elemental Result.</p>
+<blockquote>
+<div><p><img alt="image4" src="../_images/Hotspot_mask_GUI.png" /></p>
+<p><strong>Inverse</strong> ON will exclude the node sets selected, whereas
+<strong>Inverse</strong> OFF finds hotspots only in the node sets selected.</p>
+</div></blockquote>
+<p><img alt="image5" src="../_images/Mask_in_out_viewer.png" /></p>
+<ul>
+<li><p class="first"><strong>Add View Points:</strong> When enabled, this option generates viewpoints
+according to viewpoint options specified. Viewpoints Options
+button is enabled only when this option is checked.</p>
+</li>
+<li><p class="first"><strong>Export:</strong> This option helps users to export the viewpoints into
+either VPT file or Microsoft PPT file. While adding the view
+path, users will be prompted for a file name and file type.</p>
+</li>
+<li><p class="first"><strong>Viewpoints Options:</strong> This option helps users to select either part
+wise viewpoints or multi view points for a single scene.</p>
+<blockquote>
+<div><p><img alt="image6" src="../_images/Hotspot_viewpoint_option.jpg" /></p>
+</div></blockquote>
+</li>
+</ul>
+<p>The various fields that are seen in the Viewpoint Options panel are
+explained below</p>
+<ul>
+<li><p class="first"><strong>Each Parts</strong>: Enabling this option creates a viewpoint for every
+part. If the top hotspot count is specified as ten, and if the
+model consists of 5 parts, then the generated view path consists
+of 5 viewpoints (one per each part) with each viewpoint
+consisting of ten hot spots in the corresponding part. There will
+not be any change in view and orientations. In every viewpoint,
+one part is visible and others are hidden.</p>
+</li>
+<li><p class="first"><strong>Visible:</strong> When enabled, this option filters the parts based on its
+visibility and lists the parts in the list.</p>
+</li>
+<li><p class="first"><strong>All Std. Views:</strong> This option will include 6 standard view points
+(X, Y, Z,-X,-Y and -Z) for each part or current scene based on
+<strong>Each Part</strong> option. The viewpoints can be filtered by checking
+or unchecking the corresponding boxes. options. Users can check
+or uncheck the entire column or row as well in one shot.</p>
+</li>
+<li><p class="first"><strong>Add View</strong>: Add view option adds current camera view or user’s view
+as an option with standard views in the GUI. Users can check or
+uncheck if necessary. To update current view, click on the
+<img alt="image7" src="../_images/HS_AddView_icon.gif" />icon. It will set the current camera position as the
+viewpoint.</p>
+</li>
+<li><p class="first"><strong>Regions:</strong> The model area can be split into a number of regions and
+each region that is displayed focuses on that region’s hotspots.
+(2,4) means to split the model area into 2 regions horizontally
+and 4 regions vertically, so the total regions are 2x4=8.</p>
+<blockquote>
+<div><p><img alt="image8" src="../_images/Model_HS_regions.jpg" /></p>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Hotspots per page:</strong> Users can specify the number of hotspots per
+page in the viewpoints. If there are 45 hotspots in the model and
+20 are the Hotspots per page specified, then 3 viewpoints will be
+generated. First and second viewpoints will have 20 hotspots in
+each and the remaining 5 hotspots will be shown in the third
+viewpoint.</p>
+<blockquote>
+<div><p>Note: By default the number of hotspots per page is 20 (max
+allowed). Users can change this as per requirement.</p>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Auto Views</strong> : When selected, this option helps to orient the
+viewpoint so that the user can view all the hotspots clearly.</p>
+<blockquote>
+<div><p>The number of auto views specifies how many auto viewpoints should
+be generated to make all the hotspots visible to the user.</p>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Steps to edit the generated viewpoint manually</strong></p>
+<p>Users can edit the view points generated by using an automatic hotspot
+generator and add hotspots manually as follows.</p>
+<ol class="arabic simple">
+<li>Create a view path by using automatic hotspot generation as
+explained in the previous section.</li>
+<li>Open the hotspot settings and check Previous Labels</li>
+<li>Select a view point generated by using automatic hotspot finder, for
+example viewpoint “Object 1”</li>
+<li>Select the menu item <strong>Label -&gt; Delete Labels/Notes</strong> in the context
+menu to remove the unwanted annotations and click to move the
+annotations</li>
+<li>Uncheck the <strong>Label -&gt; Delete Labels/Notes</strong> when completed</li>
+<li>Click the <strong>hotspot finder</strong> tool.</li>
+<li>Left click and drag to select an area for creating hotspots.</li>
+<li>Right click in the <strong>ViewPoints</strong> tab to open the context menu.</li>
+<li>Right click on the viewpoint to be edited.</li>
+<li>Then select the <strong>Update viewpoint</strong> for updating</li>
+</ol>
+<p><strong>Min / Max Hotspot Generation</strong></p>
+<blockquote>
+<div>Instead of generating hotspots automatically, users can also locate
+the hotspots manually. The manual hotspot generation currently
+supports only location of nodes with extreme values
+(minimum/maximum). Local extremes are not supported at present.</div></blockquote>
+<p><strong>Steps to locate hotspots manually</strong></p>
+<ol class="arabic simple">
+<li>Click the hotspot finder icon in the toolbar. The mouse mode is now
+changed to hotspot finder mode.</li>
+<li>Click and drag on the graphics window to select a region as shown in
+the following screen capture.</li>
+</ol>
+<p><img alt="image9" src="../_images/HS_region_find.jpg" /></p>
+<p>When a region is selected, VCollab locates the nodes with minimum and
+maximum values in the selected region and displays as shown in the
+following figure.</p>
+<p><img alt="image10" src="../_images/HS_region_found.jpg" /></p>
+<p>3. The above image shows two hot spots (node 25 and node 96) that are
+identified by VCollab. The maximum deformation (displacement) in the
+selected rectangular window occurs at node 25 (magnitude of 1.866) and
+the minimum occurs at node 96 (magnitude of 0.016).</p>
+<p>4. The user can select another region and display the nodes with minimum
+and maximum values for the selected region again. The number of hot
+spots along with other settings can be changed in the Hot <strong>spot finder
+settings</strong> dialog. This dialog can be opened using the following steps.</p>
+<ul class="simple">
+<li>Invoke <strong>CAE settings</strong> dialog from the context menu</li>
+<li>Click on the <strong>Hotspot finder</strong> tab.</li>
+</ul>
+<p><img alt="image11" src="../_images/Hotspot_settings_GUI.jpg" /></p>
+<ul>
+<li><p class="first">All default settings except All Top and Bottom, are the same as in
+the Hotspots option.</p>
+</li>
+<li><p class="first">The following list explains different settings and their
+significance.</p>
+</li>
+<li><p class="first">The number of hot spots to be displayed can be controlled by
+changing the values in top and bottom text boxes. In the
+following figure, two top and three bottom hot spots are
+specified.</p>
+<blockquote>
+<div><p><img alt="image12" src="../_images/HS_topbottom_count.jpg" /></p>
+</div></blockquote>
+</li>
+<li><p class="first">Selecting an area on the screen with the left mouse down with these
+settings, results in the display of five hot spots (two nodes
+with highest values and three nodes with the lowest values).
+Users can uncheck the top/bottom or change its count to zero to
+display only the nodes with the lowest/highest values
+respectively.</p>
+</li>
+<li><p class="first">The Zone radius option that is provided in the hot spot settings
+allows the user to avoid locating hot spots next to each other.</p>
+<ul class="simple">
+<li><img alt="image13" src="../_images/Zone_radius_entry.jpg" /></li>
+</ul>
+</li>
+<li><p class="first">Once a node with maximum/minimum is found, VCollab skips all the
+nodes within the specified radius of that node during its
+search for the next maximum/minimum. The following two images
+show the identified hotspots without and with the use of
+<strong>zone radius</strong> option.</p>
+<blockquote>
+<div><p><img alt="image14" src="../_images/HS_count_found.jpg" /></p>
+<p><img alt="image15" src="../_images/HS_with_navigator.jpg" /></p>
+</div></blockquote>
+<p>Note: When the mouse control is in hotspot mode, users cannot zoom,
+pan or rotate the image. To be able to do so, while continuing in
+hotspot mode, users can turn on the <strong>Navigator</strong> by either turning
+on the Navigator in the product tree or by clicking the menu item
+<strong>*T*ools -&gt; Navigator</strong>. The navigator displays additional
+entities on the graphical window which facilitate zoom, rotate or
+pan the scene.</p>
+</li>
+</ul>
+<p><strong>Steps to Export Viewpoints generated by the user</strong></p>
+<ol class="arabic simple">
+<li>Select the desired view path in the viewpoints tab from the drop down
+list.</li>
+<li>Right click to open the context menu.</li>
+<li>Click on the <strong>Export viewpoints</strong> option.</li>
+<li>The Save file dialog opens. Enter the <strong>filename</strong> and change the
+Save as type: to MS-PowerPoint Presentation Files (*.ppt)</li>
+<li>VCollab prompts the user to use any predefined Microsoft PowerPoint
+template. Select <strong>*Yes*</strong> to use a predefined template.</li>
+<li>Wait till VCollab exports all the viewpoints and creates a PowerPoint
+file with viewpoints as slides.</li>
+</ol>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2023, Visual Collaboration Technologies Inc..<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

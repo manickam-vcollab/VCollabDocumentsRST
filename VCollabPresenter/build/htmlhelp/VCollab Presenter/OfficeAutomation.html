@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS Office Automation Using VCollab Presenter</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Embedding VCollab Presenter in Internet Browsers" href="Presenter_Internet_Explorer.html" />
+    <link rel="prev" title="Embedding CAX file using Macros in MS Office" href="InsertCAxUsingMacros.html" />
+
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          VCollabPresenter</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPresenter</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">MS Office Automation Using VCollab Presenter</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="InsertCAxUsingMacros.html" title="Previous Chapter: Embedding CAX file using Macros in MS Office"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Embedding CAX...</span>
+    </a>
+  </li>
+  <li>
+    <a href="Presenter_Internet_Explorer.html" title="Next Chapter: Embedding VCollab Presenter in Internet Browsers"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Embedding VCo... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="ms-office-automation-using-vcollab-presenter">
+<h1>MS Office Automation Using VCollab Presenter</h1>
+<p>Users can create and run VBA scripts in MS office products to make one
+program to command another program to do something. This is MS office
+automation. VCollab Presenter provides a VCollab Type library that can
+be used in these VBA scripts for automation.</p>
+<p>In this module we will show how Cax2Doc and Cax2PPT applications can be
+created using MS office automation.</p>
+<p><strong>Prerequisites:</strong> Visual Basic/ Visual C++ / COM / C# programming
+knowledge.</p>
+<p>For Microsoft Office Automation basics read,</p>
+<p><a class="reference external" href="http://msdn.microsoft.com/en-us/library/aa155776(office.10).aspx" target="_blank">Automating Microsoft Office 97 and Microsoft Office 2000</a></p>
+<p><a class="reference external" href="http://msdn.microsoft.com/en-us/library/aa188489(office.10).aspx" target="_blank">Microsoft Office Development with Visual Studio</a>.</p>
+<p>Download the Type Library for VCollab Presenter <a class="reference external" href="http://downloads.vcollab.com/CAX2MSOFFICE/VCollab.zip" target="_blank">VCollab.tlb</a>.</p>
+<p><strong>Case Study 1: Cax2Doc Application Creation</strong></p>
+<p>Requirements: VC++ 2005, MS Word 2003, VCollab Presenter</p>
+<ol class="arabic simple">
+<li>Open VC++ 2005 IDE.</li>
+<li>Create a new MFC Application, using <strong>File-&gt;New-&gt;Project</strong> menu.</li>
+<li>Click <strong>Project-&gt;Add Class</strong> in VC++ 2005 IDE.</li>
+<li>Select <strong>MFC Class From TypeLib</strong> and click the <strong>Add</strong> button.</li>
+</ol>
+<p><img alt="image0" src="../_images/Word_addclas.jpg" /></p>
+<p>5. Select MS-Word 11 libraries and click the ‘<strong>&gt;&gt;</strong>’ button before
+<strong>Finish</strong>.</p>
+<p><img alt="image1" src="../_images/word_addclass_wizard.jpg" /></p>
+<ol class="arabic simple" start="6">
+<li>This will add all required MS-Word wrapper classes into your project.</li>
+</ol>
+<p>7. Repeat steps 3 and 4 to add class for VCollab Presenter. (Ensure <a class="reference external" href="http://downloads.vcollab.com/CAX2MSOFFICE/VCollab.zip" target="_blank">VCollab.tlb</a>
+is present in your system else download it)</p>
+<p>8.Select <strong>File</strong> option and locate the <strong>VCollab.tlb</strong> file from your
+local disk. Use <strong>&gt;&gt;</strong> and click <strong>Finish</strong> when the classes have been
+added. This will add all required VCollab Presenter wrapper classes into
+your project.</p>
+<p><img alt="image2" src="../_images/Word_addclass_generated.jpg" /></p>
+<p>9. Include the required headers into your .cpp file and use the
+following function to generate a .doc file that is embedded with CAX.</p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first">#include “MSword.h”</p>
+<p>#include “vcollab.h”</p>
+<p>void CreateDoc(CString sCaxFilePath,CString sDocFilePath)</p>
+<p>{</p>
+<p>COleVariant vOpt(DISP_E_PARAMNOTFOUND, VT_ERROR);</p>
+<p>_Application oApplication;</p>
+<p>// Create IDispatch connection to MS-Word.</p>
+<p>oApplication.CreateDispatch(_T(“Word.Application”));</p>
+<p>long iWndState=oApplication.GetWindowState();</p>
+<p>oApplication.SetWindowState((long) 2);//minimize</p>
+<blockquote>
+<div><p>// Make sure there is a dispatch pointer for word.</p>
+<p>if(oApplication.m_lpDispatch == NULL)</p>
+</div></blockquote>
+<p>{</p>
+<p>// Display a message indicating that PowerPoint is not running.</p>
+<p>AfxMessageBox(_T(“MS-Word 2003 with SP3 (11.8313.8221) and above needed.”));</p>
+<p>return;</p>
+<p>}</p>
+<p>Documents oDocuments;</p>
+<p>// Attach the presentations collection to the PresCollection variable.</p>
+<p>oDocuments.AttachDispatch(oApplication.GetDocuments());</p>
+<p>// Create a new document.</p>
+<p>oDocuments.Add(vOpt,vOpt,vOpt,vOpt);</p>
+<p>_Document oDocument=oApplication.GetActiveDocument();</p>
+<p>Selection oSel = oApplication.GetSelection();</p>
+<p>InlineShapes oShapes=oSel.GetInlineShapes();</p>
+<p>try</p>
+<p>{</p>
+<p>//Add Vcollab Presenter ActtiveX control to the document</p>
+<p>InlineShape vcollabShape = oShapes.AddOLEControl( COleVariant(_T(“VCOLLAB.VCollabCtrl.1”)) ,vOpt);</p>
+<p>//Set Width and height of the Active X Control</p>
+<p>vcollabShape.SetWidth(450);th(450);</p>
+<p>vcollabShape.SetHeight(300);</p>
+<p>//get ActiveX Object</p>
+<p>OLEFormat vcollabOle=vcollabShape.GetOLEFormat();</p>
+<p>IDispatch* pDispObject= vcollabOle.GetObject();</p>
+<p>if(pDispObject)</p>
+<p>{</p>
+<p>CVCollab vcollabObj=vcollabOle.GetObject();</p>
+<p>//Set file path of the cax file that need to be linked with VCollab Presenter</p>
+<p>vcollabObj.SetFilePath(sCaxFilePath);</p>
+<p>}</p>
+<p>else</p>
+<p>{</p>
+<p>AfxMessageBox(_T(“VCollab Presenter is not installed properly”));</p>
+<p>}</p>
+<p>}</p>
+<p>catch(…)</p>
+<p>{</p>
+<p>AfxMessageBox(_T(“VCollab Presenter is not installed properly”));</p>
+<p>}</p>
+<p>//Save the document file.</p>
+<blockquote>
+<div>oDocument.SaveAs(COleVariant(sDocFilePath,VT_BSTR),vOpt,vOpt,vOpt,vOpt,vOpt,</div></blockquote>
+<p>vOpt,vOpt,vOpt,vOpt,vOpt,</p>
+<p>vOpt,vOpt,vOpt,vOpt,vOpt);</p>
+<p>oApplication.Quit(vOpt,vOpt,vOpt);</p>
+<p>// Free the dispatch. This sets m_lpDispatch to NULL.</p>
+<p>oApplication.ReleaseDispatch();</p>
+<p>return ;</p>
+<p class="last">}</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Case Study 2: Cax2PPT Application Creation.</strong></p>
+<p>Requirements: VC++ 2005, MS PowerPoint 2003, VCollab Presenter</p>
+<ol class="arabic simple">
+<li>Open VC++ 2005 IDE.</li>
+<li>Create a new MFC Application using <strong>File-&gt;New-&gt;Project</strong> menu.</li>
+<li>Click <strong>Project-&gt;Add Class</strong> menu in VC++ 2005 IDE.</li>
+<li>In the following window select <strong>MFC Class From TypeLib</strong> and click
+the Add button.</li>
+</ol>
+<p><img alt="image3" src="../_images/word_addclass_cax2ppt.jpg" /></p>
+<p>5. Select MS-PowerPoint11 libraries like in the following window and
+click <strong>&gt;&gt;</strong> before <strong>Finish</strong>.</p>
+<p><img alt="image4" src="../_images/word_addclass_typelib_wizard.jpg" /></p>
+<p>6. This will add all required MS-PowerPoint wrapper classes into your
+project.</p>
+<p>7. Do step 3 and 4 to add again class for VCollab Presenter. (Before
+that copy the VCollab.tlb in case, it is not found in VCollab Presenter
+installed folder)</p>
+<p>8. In the following dialog select <strong>File</strong> option and locate the
+VCollab.tlb file from your local disk and press <strong>&gt;&gt;</strong> before
+<strong>Finish</strong>. This will add all required VCollab Presenter wrapper classes
+into your project.</p>
+<p><img alt="image5" src="../_images/word_addclass_typelib_generated.jpg" /></p>
+<p>9. Include the required headers into your .cpp file and use the
+following function to generate a .doc file that is embedded with CAX.</p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first">#include “MSPPT.h”</p>
+<p>#include “VCollab.h”</p>
+<p>void CreatePPT(CString sCaxFilePath,CString sPPTPathName,CString sTemplatePath)</p>
+<p>{</p>
+<p>_Application oApplication;</p>
+<p>// Create IDispatch connection to PowerPoint.</p>
+<p>oApplication.CreateDispatch(_T(“PowerPoint.Application”));</p>
+<p>// Bring the PowerPoint application to the front.</p>
+<p>oApplication.Activate();</p>
+<p>long iPPtWndState=oApplication.GetWindowState();</p>
+<p>oApplication.SetWindowState((long) 2);//minimize</p>
+<p>Presentations presentations;</p>
+<p>// Make sure there is a dispatch pointer for PowerPoint.</p>
+<p>if(oApplication.m_lpDispatch == NULL)</p>
+<p>{</p>
+<p>// Display a message indicating that PowerPoint is not running.</p>
+<p>AfxMessageBox(_T(“MS-PowerPoint 2003 and above needed.”));</p>
+<p>return;</p>
+<p>}</p>
+<p>// Attach the presentations collection to the PresCollection variable.</p>
+<p>presentations.AttachDispatch(oApplication.GetPresentations());</p>
+<p>// Connect to the active presentation. There is no error trapping.</p>
+<p>// If the active presentation the framework traps</p>
+<p>// the error and displays a message box.</p>
+<p>_Presentation ActivePresentation;</p>
+<p>if(sTemplatePath.GetLength())</p>
+<p>{</p>
+<p>//Open Template</p>
+<p>ActivePresentation = presentations.Open(</p>
+<p>LPCTSTR(sTemplatePath), //File name</p>
+<p>(long)0, //Read-only</p>
+<p>(long)-1, //Untitled</p>
+<p>(long)-1 //WithWindow</p>
+<p>);</p>
+<p>}</p>
+<p>else</p>
+<p>{</p>
+<p>// Create a new presentation.</p>
+<p>presentations.Add(1);</p>
+<p>ActivePresentation=oApplication.GetActivePresentation();</p>
+<p>}</p>
+<p>// Connect to the slides collection.</p>
+<p>Slides oSlides(ActivePresentation.GetSlides());</p>
+<p>const int ppLayoutTitleOnly = 11;</p>
+<p>// Add a new slide to the presentation. This code adds the new</p>
+<p>// slide to the end of the presentation.</p>
+<p>CRect ctrlRect;</p>
+<p>ctrlRect.top=0;</p>
+<p>ctrlRect.left=0;</p>
+<p>ctrlRect.right=600;</p>
+<p>ctrlRect.bottom=400;</p>
+<p>//set the Presenter control to the slide center</p>
+<p>_Master slideMaster=ActivePresentation.GetSlideMaster();</p>
+<p>float slideWidth=slideMaster.GetWidth();</p>
+<p>float fImageLeft=(slideWidth*0.5f)-(ctrlRect.right*0.5f);</p>
+<p>int iSlideCount=oSlides.GetCount();</p>
+<p>oSlides.Add( iSlideCount+1, ppLayoutTitleOnly);</p>
+<p>//Connect to the first slide in the presentation.</p>
+<p>long lIndex = iSlideCount+1;</p>
+<p>COleVariant SlideNumber(lIndex);</p>
+<p>_Slide oSlide(oSlides.Item(SlideNumber));</p>
+<p>// Connect to the Shapes collection.</p>
+<p>Shapes oShapes(oSlide.GetShapes());</p>
+<p>float fImageTop=70;</p>
+<p>CString sWndText=sCaxFilePath;</p>
+<p>if(oShapes.GetHasTitle())</p>
+<p>{</p>
+<p>Shape title(oShapes.GetTitle());</p>
+<p>TextFrame textFrame =title.GetTextFrame();</p>
+<p>TextRange textRange =textFrame.GetTextRange();</p>
+<p>textRange.SetText(sWndText);</p>
+<p>fImageTop=title.GetTop()+title.GetHeight()+2;</p>
+<p>}</p>
+<p>else</p>
+<p>{</p>
+<p>Shape title(oShapes.AddTitle());</p>
+<p>TextFrame textFrame =title.GetTextFrame();</p>
+<p>TextRange textRange =textFrame.GetTextRange();</p>
+<p>textRange.SetText(sWndText);</p>
+<p>fImageTop=title.GetTop()+title.GetHeight()+2;</p>
+<p>}</p>
+<p>try</p>
+<p>{</p>
+<p>Shape vcollabShape=oShapes.AddOLEObject(fImageLeft,fImageTop,ctrlRect.right,ctrlRect.bottom,</p>
+<p>_T(“VCOLLAB.VCollabCtrl.1”),</p>
+<p>_T(“”), 0, _T(“”), 0, _T(“”), 0);</p>
+<p>OLEFormat vcollabOle=vcollabShape.GetOLEFormat();</p>
+<p>IDispatch* pDispObject= vcollabOle.GetObject();</p>
+<p>if(pDispObject)</p>
+<p>{</p>
+<p>CVCollab vcollabObj=vcollabOle.GetObject();</p>
+<p>//Set the cax file that to be linked with presenter in PPT</p>
+<p>vcollabObj.SetFilePath(sCaxFilePath);</p>
+<p>}</p>
+<p>else</p>
+<p>{</p>
+<p>AfxMessageBox(_T(“VCollab Presenter or above is not installed properly”));</p>
+<p>}</p>
+<p>}</p>
+<p>catch(…)</p>
+<p>{</p>
+<p>AfxMessageBox(_T(“VCollab Presenter or above is not installed properly”));</p>
+<p>}</p>
+<p>//vcollabObj</p>
+<p>ActivePresentation.SaveAs(sPPTPathName,1,1);</p>
+<p>oApplication.SetWindowState(iPPtWndState);</p>
+<p>// Quit PowerPoint. Note, the Quit command exits</p>
+<p>// PowerPoint without displaying any dialog boxes. So,</p>
+<p>// any unsaved data is lost.</p>
+<p>oApplication.Quit();</p>
+<p>// Free the dispatch. This sets m_lpDispatch to NULL.</p>
+<p>oApplication.ReleaseDispatch();</p>
+<p>return ;</p>
+<p class="last">}</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>The above method is just a sample code and only to show how VCollab
+Presenter can be used in Office Automation.</p>
+<p>To create customized MS word documents on Powerpoint files you need to
+do more programming. Refer to the following links to understand what
+else can be done.</p>
+<p><a class="reference external" href="http://msdn.microsoft.com/en-us/library/aa188489(office.10).aspx" target="_blank">Microsoft Office Development with Visual Studio</a>.</p>
+<p><a class="reference external" href="http://msdn.microsoft.com/en-us/library/aa140269(office.10).aspx" target="_blank">Effectively Using ActiveX Form Controls in Microsoft Word</a>.</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2023, Visual Collaboration Technologies Inc..<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

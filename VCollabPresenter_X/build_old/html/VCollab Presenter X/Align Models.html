@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Align Models &mdash; VCollab-Document  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/Custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CAE" href="CAE_Menu.html" />
+    <link rel="prev" title="Refresh Normals" href="RefreshNormals.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #EDEDED" >
+          
+
+          
+            <a href="../VCollabPresenter.html">
+          
+
+          
+            
+            <img src="../_static/VCollab-Logo-wt.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+              <div class="version">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Version</title>
+</head>
+<body>
+    
+    <span class="version">23.2.0
+              </div>
+
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPresenter X</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="GUI_Layout.html">GUI Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System_Requirements.html">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Custom_Toolbar.html">Custom Toolbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Labels.html">Labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="File_Menu.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="View_Menu.html">View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Edit_Menu.html">Edit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Viewpoints.html">Viewpoints</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="Tools_Menu.html">Tools</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="XYPlot.html">XY Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Section.html">Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Measurement.html">Measurement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Explode.html">Explode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Pick.html">Pick</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RefreshNormals.html">Refresh Normals</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Align Models</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#align-models-panel">Align Models Panel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#steps-to-align-models">Steps to align models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CAE_Menu.html">CAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Find_Parts.html">Find Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Profiles.html">Profiles</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../VCollabPresenter.html">VCollab-Document</a>
+        
+      </nav>
+
+	  <div class="rst-header">
+	  
+	   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" class="rst-header" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../VCollabPresenter.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">VCollabPresenter X</a> &raquo;</li>
+        
+          <li><a href="Tools_Menu.html">Tools</a> &raquo;</li>
+        
+      <li>Align Models</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="CAE_Menu.html" class="btn btn-neutral float-right" title="CAE" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="RefreshNormals.html" class="btn btn-neutral float-left" title="Refresh Normals" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+	  
+	  </div>
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+         
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="align-models">
+<h1>Align Models<a class="headerlink" href="#align-models" title="Permalink to this headline">¶</a></h1>
+<p>This section explains how merged models can be aligned and assembled. User can do the following operations.
+- Align points
+- Align axis using a line segment.
+- Align faces.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option is enabled only if one or more models are merged.</p>
+</div>
+<div class="section" id="align-models-panel">
+<h2>Align Models Panel<a class="headerlink" href="#align-models-panel" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><img alt="image1" src="../_images/AlignModel_Panel.png" /></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 74%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>P1</p></td>
+<td><p>Point 1 in Model 1</p></td>
+</tr>
+<tr class="row-even"><td><p>P2</p></td>
+<td><p>Point 2 in Model 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Apply (Position)</p></td>
+<td><p>Aligns P1  to P2</p></td>
+</tr>
+<tr class="row-even"><td><p>P3</p></td>
+<td><p>Point 3 in Model 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>P4</p></td>
+<td><p>Point 4 in Model 2</p></td>
+</tr>
+<tr class="row-even"><td><p>Apply (Axis)</p></td>
+<td><p>Aligns P3-P1 line wth P4-P2</p></td>
+</tr>
+<tr class="row-odd"><td><p>P5</p></td>
+<td><p>Point 5 in Model 1</p></td>
+</tr>
+<tr class="row-even"><td><p>P6</p></td>
+<td><p>Point 6 in Model 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Apply (Plane)</p></td>
+<td><p>Aligns [P5-P3-P1] plane with [P6-P4-P2]</p></td>
+</tr>
+<tr class="row-even"><td><p>Reset</p></td>
+<td><p>Resets the transformation to previous state</p></td>
+</tr>
+<tr class="row-odd"><td><p>Close</p></td>
+<td><p>Closes dialogbox</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="steps-to-align-models">
+<h2>Steps to align models<a class="headerlink" href="#steps-to-align-models" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Load and merge two or more models</p></li>
+<li><p>Click <em>Tools | Align Models | 3 Points…</em> option</p></li>
+<li><p>It pops up Align Models panel</p></li>
+<li><p>Click P1 button which enables user to pick a point on model</p></li>
+<li><p>Pick a point from a model. This becomes the <strong>source</strong> model. So P3 and P5 should be picked from this same model.</p></li>
+<li><p>P2 is checked or enabeld automatically once P1 is picked.</p></li>
+<li><p>User can pick P2 from any model other than source model. This becomes the <strong>target model</strong>. So P4 and P6 should be picked from the same target model.</p></li>
+<li><p>Click <em>Apply (Position)</em>, which aligns P1 to P2</p>
+<p><img alt="image2" src="../_images/AlignModel_Position.png" /></p>
+</li>
+<li><p>Click P3 from source model and P4 from target model.</p></li>
+<li><p>Click <em>Apply (Axis)</em>, which aligns the lines P1-P3 to the line P2-P4.</p>
+<p><img alt="image3" src="../_images/AlignModel_Axis.png" /></p>
+</li>
+<li><p>Click P5 from source model and P6 from target model.</p></li>
+<li><p>Click <em>Apply (Plane)</em>, which aligns the planes [P1-P3-P5] to [P2-P4-P6].</p>
+<p><img alt="image4" src="../_images/AlignModel_Plane.png" /></p>
+</li>
+<li><p>Click <em>Reset</em> if required, which resets the previous states of models.</p></li>
+<li><p>Click <em>Close</em> to close the panel.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>User should make sure that P1,P2&amp;P3 are picked from same source model and P2,P4 &amp; P6 are picked from target model.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Visual Collaboration Technologies Inc..
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+  
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-736729-4"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-736729-4');
+</script>
+	    
+</body>
+</html>

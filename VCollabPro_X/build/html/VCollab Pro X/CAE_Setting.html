@@ -1,0 +1,539 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>CAE Settings &mdash; VCollab-Document  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/Custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Deformation Scale Factor" href="Deformation_Scale_Factor.html" />
+    <link rel="prev" title="Results" href="Results_Visualization.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #EDEDED" >
+          
+
+          
+            <a href="../VCollabProX.html">
+          
+
+          
+            
+            <img src="../_static/VCollab-Logo-wt.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+              <div class="version">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Version</title>
+</head>
+<body>
+    
+    <span class="version">23.3
+              </div>
+
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPro X</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="GUI_Layout.html">GUI Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System_Requirements.html">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Custom_Toolbar.html">Custom Toolbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="File_Menu.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="View_Menu.html">View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Edit_Menu.html">Edit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tools_Menu.html">Tools</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="CAE_Menu.html">CAE</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Results_Visualization.html">Results</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">CAE Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Deformation_Scale_Factor.html">Deformation Scale Factor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Probe.html">Probe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Probe_Label_Settings.html">Probe Label Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Hotpsot_Finder.html">Hotpsot Finder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Contour_Lines.html">Contour Lines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Vector_Plot.html">Vector Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Symbol_Plot.html">Symbol Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Animation.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Animation_Setup.html">Animation Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Create_Result_Expression.html">Create Result using Expression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Create_Result_Transformation.html">Create Result using Coordinate Transformation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Nodeset_Manager.html">Nodeset Manager</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Find_Parts.html">Find Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Profiles.html">Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BatchMode.html">Batch Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PyTools/index.html">Python Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Headless_Server.html">Linux - Configuration for Headless Server</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../VCollabProX.html">VCollab-Document</a>
+        
+      </nav>
+
+	  <div class="rst-header">
+	  
+	   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" class="rst-header" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../VCollabProX.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">VCollabPro X</a> &raquo;</li>
+        
+          <li><a href="CAE_Menu.html">CAE</a> &raquo;</li>
+        
+      <li>CAE Settings</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="Deformation_Scale_Factor.html" class="btn btn-neutral float-right" title="Deformation Scale Factor" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="Results_Visualization.html" class="btn btn-neutral float-left" title="Results" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+	  
+	  </div>
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+         
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cae-settings">
+<h1>CAE Settings<a class="headerlink" href="#cae-settings" title="Permalink to this headline">¶</a></h1>
+<p>This section helps user to edit CAE result range, colors, format of
+legend values, vector plot etc.</p>
+<p>CAE settings dialog contains four sections as below.</p>
+<p><strong>Legend</strong></p>
+<blockquote>
+<div><p>User can,</p>
+<ul class="simple">
+<li><p>edit result range, and filter color &amp; parts based on the range,</p></li>
+<li><p>edit numeric format,</p></li>
+<li><p>toggle legend visibility and</p></li>
+<li><p>Orient the legend to left/right/top/bottom.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Palette</strong></p>
+<blockquote>
+<div><p>User can,</p>
+<ul class="simple">
+<li><p>edit number of palette colors,</p></li>
+<li><p>edit a color mapped to a range,</p></li>
+<li><p>edit value range of a color and interpolate</p></li>
+<li><p>Reverse the colors,</p></li>
+<li><p>toggle between continuous and discrete</p></li>
+<li><p>edit background &amp; font size.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Vector</strong></p>
+<blockquote>
+<div><p>User can,</p>
+<ul class="simple">
+<li><p>show/hide</p></li>
+<li><p>scale vector length,</p></li>
+<li><p>change arrow color and size</p></li>
+<li><p>set nodal vertex as start or end point</p></li>
+<li><p>reverse vector direction</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Options</strong></p>
+<blockquote>
+<div><p>User can</p>
+<ul class="simple">
+<li><p>Show /Hide color plot, min-max labels, contour lines and
+undeformed mesh,</p></li>
+<li><p>Apply/ Remove deformation</p></li>
+<li><p>change undeformed mesh mode.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Legend</strong></p>
+<blockquote>
+<div><p><img alt="image1" src="../_images/CAE_Settings_Panel.png" /></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Model</strong></p></td>
+<td><p>Allows user to select a CAE model.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Min</strong></p></td>
+<td><p>Enables to modify min value in the range.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Max</strong></p></td>
+<td><p>Enables to modify max value in the range.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Filter color</strong></p></td>
+<td><p>Filters the contour beyond range with <em>No
+Result</em> color.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Filter Parts</strong></p></td>
+<td><p>Filters Parts which falls beyond result range.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>All Instances</strong></p></td>
+<td><p>Applies the modification to all instances</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Scientific</strong></p></td>
+<td><p>Allows user to change the numeric format from
+decimal to scientific.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Precision</strong></p></td>
+<td><p>Allows user to edit the precision value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Show Legend</strong></p></td>
+<td><p>Allows user to show/hide legend.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Orientation</strong></p></td>
+<td><p>Allows user to change legend orientation from
+left to right/top/bottom.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Model Name</strong></p></td>
+<td><p>Displays/Hides the model name in the legend
+header.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Result Name</strong></p></td>
+<td><p>Displays/Hides the result name in the legend
+header.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Instance Name</strong></p></td>
+<td><p>Displays/Hides the instance name in the legend
+header with attributes.</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+<p><strong>Palette</strong></p>
+<blockquote>
+<div><p><img alt="image2" src="../_images/CAE_Settings_Palette_Panel.png" /></p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check boxes near palette colors are used to apply or remove transparency in the color.</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Number of Colors</strong></p></td>
+<td><p>Allows user to edit number of colors
+for the palette.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Reverse</strong></p></td>
+<td><p>Reverses the palette color.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Discrete</strong></p></td>
+<td><p>Switches from Continuous to Discrete
+contour and vice versa.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Update All Viewpoints</strong></p></td>
+<td><p>Updates CAE settings changes to all
+viewpoints.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>No Result</strong></p></td>
+<td><p>Allows user to change <em>No Result</em>
+color.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Background</strong></p></td>
+<td><p>Allows user to apply/ remove background
+and to edit color.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Inverse Transparency</strong></p></td>
+<td><p>Inverts the transparency check box
+selections.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Clear Transparency</strong></p></td>
+<td><p>Clear all color transparency flags.
+(Unchecks all boxes against colors)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Font Size</strong></p></td>
+<td><p>Allows user to change font size between
+<em>Small/Medium/Large</em></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Clear</strong></p></td>
+<td><p>Clears the palette color value range
+except min and max and allows user to
+edit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Fill</strong></p></td>
+<td><p>Interpolate the values for undefined
+color range (blank cells).</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Apply</strong></p></td>
+<td><p>Applies all the modifications.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Options</strong></p>
+<blockquote>
+<div><p><img alt="image3" src="../_images/CAE_Settings_Options_Panel.png" /></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 66%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Color Plot</strong></p></td>
+<td><p>Applies/Removes contour color from the
+model.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Min &amp; Max Label</strong></p></td>
+<td><p>Shows/Hides min/max label.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Apply Deformation</strong></p></td>
+<td><p>Applies/Removes deformation to/from model.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Contour Lines</strong></p></td>
+<td><p>Allows user to show/hide and to edit color
+of contour lines.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Undeformed Mesh</strong></p></td>
+<td><p>Allows user to show/hide undeformed mesh in
+different modes and to edit mesh color.</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>How to update Legend with user defined range?</strong></p>
+<ul class="simple">
+<li><p>Click ‘CAE | CAE Settings’.</p></li>
+<li><p>Click ‘Legend Setting’ tab in the popped up dialog.</p></li>
+<li><p>Click Min and Max options to change range.</p></li>
+<li><p>Enter the new range values.</p></li>
+<li><p>Click Filter option.</p></li>
+<li><p>It enables color window box.</p></li>
+<li><p>Select a color to be applied for results which are beyond the user
+range.</p></li>
+<li><p>Click ‘Update Current Instance’ button.</p></li>
+<li><p>Observe the changes in the viewer.</p></li>
+</ul>
+<p><strong>How to edit Legend and Palette attributes?</strong></p>
+<ul>
+<li><p>Click ‘CAE Settings’ icon <img alt="image4" src="../_images/CaeSettings.png" />.</p></li>
+<li><p>Click ‘Palette’ tab.</p></li>
+<li><p>Select “preset#3” in palette dropdown.</p>
+<p><img alt="Palette_Example" src="../_images/Palette_Colors_Preset3_Panel.png" /></p>
+</li>
+<li><p>Click ‘Apply’ and observe the changes in the viewer as below.</p>
+<p><img alt="image5" src="../_images/Palette_Colors_Preset3.png" /></p>
+</li>
+<li><p>Click Move Label icon <img alt="image7" src="../_images/MoveLabel.png" />,</p></li>
+<li><p>Click on palette color and drag to right side of the viewer.</p></li>
+<li><p>Click Legend tab,</p></li>
+<li><p>Select  <em>Right</em> option under Orientation drop down.</p>
+<p><img alt="image8" src="../_images/Legend_Orientation_Right.png" /></p>
+</li>
+<li><p>Go back to Palette tab,</p></li>
+<li><p>Check ‘Discrete’ option and click apply.</p></li>
+<li><p>Palette is changed to discrete color from continuous color.</p>
+<p><img alt="image9" src="../_images/Contour_Discrete.png" /></p>
+</li>
+<li><p>Click <em>Clear</em> button to clear the values in between min and max
+values,</p>
+<p><img alt="image10" src="../_images/Palette_Values_Clear.png" /></p>
+</li>
+<li><p>Enter any cell with a value which lies in the min and max interval
+but in descending order.</p>
+<p><img alt="image11" src="../_images/Palette_Values_Fill_Few.png" /></p>
+</li>
+<li><p>Click <em>Fill</em> button to interpolate for empty cells.</p>
+<p><img alt="image12" src="../_images/Palette_Values_Interpolated.png" /></p>
+</li>
+<li><p>Click Apply and notice the changes in the contour.</p>
+<p><img alt="image13" src="../_images/Contour_User_Palette.png" /></p>
+</li>
+</ul>
+<p><strong>How to visualize specific result  contour range or zones?</strong></p>
+<ul>
+<li><p>Load ‘Airbag.cax’ from VCollab samples folder.</p></li>
+<li><p>Select <em>L18M0</em> instance</p></li>
+<li><p>Click <em>Legend</em> tab.</p></li>
+<li><p>Change Min and Max Range,</p>
+<p><img alt="image14" src="../_images/Legend_User_Range_Edit.png" /></p>
+</li>
+<li><p>Click Apply</p>
+<p><img alt="image15" src="../_images/Contour_User_Range.png" /></p>
+</li>
+<li><p>To filter the contour color beyond user range, click ‘Filter’ option
+and Apply.</p>
+<p><img alt="image16" src="../_images/Contour_filter_Color.png" /></p>
+</li>
+<li><p>To hide the parts beyond range, click Filter Parts and Apply.</p>
+<p><img alt="image17" src="../_images/Contour_Filter_Parts.png" /></p>
+</li>
+<li><p>User can visualize the interested result zone clearly with the above
+options.</p></li>
+</ul>
+<p><strong>Color Plot with Transparency</strong></p>
+<p>User can turn on or off the transparency for each color by checking or unchecking the check box located in left of each color in the palette.  Transparency level can be modified using Edit Settings -&gt; Options -&gt; Transparency.</p>
+<p><img alt="image18" src="../_images/Transparency_checkbox.png" /></p>
+<p><strong>Color Plot without and with transparency</strong></p>
+<p><img alt="image19" src="../_images/ColorPlot_With_Transparency.png" /></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Visual Collaboration Technologies Inc..
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+  
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-736729-4"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-736729-4');
+</script>
+	    
+</body>
+</html>

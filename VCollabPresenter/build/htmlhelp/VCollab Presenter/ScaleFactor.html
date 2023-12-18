@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scale Factor</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="CAE Animation" href="CAEAnimation.html" />
+    <link rel="prev" title="CAE Settings" href="CAE_Settings%20_Presenter.html" />
+
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          VCollabPresenter</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPresenter</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Scale Factor</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="CAE_Settings%20_Presenter.html" title="Previous Chapter: CAE Settings"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; CAE Settings</span>
+    </a>
+  </li>
+  <li>
+    <a href="CAEAnimation.html" title="Next Chapter: CAE Animation"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">CAE Animation &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="scale-factor">
+<h1>Scale Factor</h1>
+<p>Users can scale deformation of a model in each coordinate axis using the
+<strong>Scale Factor</strong> option provided under CAE menu</p>
+<p><strong>Context Menu</strong></p>
+<p><img alt="image0" src="../_images/Context_menu_Scalefactor.png" /></p>
+<p><strong>Scale Factor Panel</strong></p>
+<p><img alt="image1" src="../_images/Scale_factor_panel.png" /></p>
+<p>The fields and options present in the Deformation Scale Factor dialog
+are explained below.</p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Uniform</strong></td>
+<td>By checking this option, the values entered by the user will be applied to all X, Y and Z directions.</td>
+</tr>
+<tr class="row-even"><td><strong>Normalize</strong></td>
+<td>Users can scale up/down with respect to model bounding percentage. The actual scale factor is
+accordingly updated.By default, deformation is scaled to 10% of model bounding radius.</td>
+</tr>
+<tr class="row-odd"><td><strong>All Models</strong></td>
+<td>Applies scale factor to all merged models.</td>
+</tr>
+<tr class="row-even"><td><strong>Apply</strong></td>
+<td>The modified scale factors will be applied on the model and visible in the viewer.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong></p>
+<p>Deformation is normalized (max - normalization) and mapped with model
+bounding sphere radius. By default normalized deformation is scaled to
+10 percent of bounding sphere radius.</p>
+<p>To apply <strong>True scale</strong> uncheck Normalize option and set scale factor in
+‘Uniform’ option as 1. Uniform means, constant scaling in X,Y and Z
+directions.</p>
+<p>If the <strong>Uniform</strong> option is unchecked, the dialog shows its X, Y and Za
+factors as below. here scaling will vary in each direction. If the model
+is planar or linear, check the Uniform option for better visualization
+of deformation.</p>
+<p><img alt="image2" src="../_images/Scale_factor_panel_unif.png" /></p>
+<p><strong>Steps to scale a model</strong></p>
+<ul class="simple">
+<li>Right click in the viewer window to open the context menu</li>
+<li>Click <strong>CAE | Scale Factor</strong> to open the <strong>Deformation Scale Factor</strong> dialog</li>
+<li>Check <strong>Uniform option</strong> to scale model uniformly.</li>
+<li>Change the value.</li>
+<li>Click <strong>Apply</strong> and view changes.</li>
+</ul>
+<p><img alt="image3" src="../_images/Steps_scalefactor.png" /></p>
+<ul class="simple">
+<li>Uncheck <strong>Uniform</strong> option to scale model in each axis with different
+values.</li>
+<li>Change scale values for each axis.</li>
+<li>Click <strong>Apply</strong> and view changes.</li>
+</ul>
+<p><img alt="image4" src="../_images/Scalefactor_unif.png" /></p>
+<p><strong>Steps to scale deformation for Mode case animation data</strong></p>
+<ul class="simple">
+<li>Load a mode case CAX file.</li>
+<li>Select <strong>CAE | Animate.</strong></li>
+<li>Select <strong>CAE | Scale Factor</strong></li>
+<li><strong>Normalize</strong> option will be checked.</li>
+<li>The default value for mode case data is 10 % and for complex eigen
+data is 1 %,</li>
+</ul>
+<p><img alt="image5" src="../_images/Scale_factor_normalize.png" /></p>
+<ul class="simple">
+<li>Change the value to 20 % and click apply.</li>
+</ul>
+<p><img alt="image6" src="../_images/Scale_factor_normalize_percent.png" /></p>
+<ul class="simple">
+<li>Notice the change.</li>
+<li>Uncheck <strong>Normalize</strong> option.</li>
+</ul>
+<p><img alt="image7" src="../_images/Scale_factor_GUI.jpg" /></p>
+<p>Usual scale factor option will be enabled. Enter 1 and click apply for
+true scale.</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2023, Visual Collaboration Technologies Inc..<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

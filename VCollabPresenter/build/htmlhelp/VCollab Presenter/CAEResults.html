@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAE Results</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="CAE Result Options" href="CAE_Result_Options_Pre.html" />
+    <link rel="prev" title="CAE" href="CAE.html" />
+
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          VCollabPresenter</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPresenter</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">CAE Results</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="CAE.html" title="Previous Chapter: CAE"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; CAE</span>
+    </a>
+  </li>
+  <li>
+    <a href="CAE_Result_Options_Pre.html" title="Next Chapter: CAE Result Options"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">CAE Result Options &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="cae-results">
+<h1>CAE Results</h1>
+<p>VCollab Presenter’s users can select a CAE result or a derived type and
+load and model them using the CAE results panel.</p>
+<p><strong>What is CAE Model?</strong></p>
+<p>A CAE model refers to a set of information belonging to one CAE
+geometry.</p>
+<p>In other words, a CAE model refers to a CAE file.</p>
+<p><strong>CAE Results Panel</strong></p>
+<p><img alt="image0" src="../_images/CAE_result_panel.png" /></p>
+<p>The various fields and options available in the CAE Results panel are
+explained below:</p>
+<p><strong>Model :</strong> Lists all the CAE models in the scene. It will contain more
+than one model if multiple models are merged into the scene.</p>
+<p><strong>Palette Options:</strong></p>
+<ul>
+<li><p class="first"><strong>Active Model</strong>
+Only the current model will be active. A single color
+palette for the active model will be displayed. The active model
+will be displayed with color plot and all other models will be
+displayed in part color. This is the default option selected.</p>
+</li>
+<li><p class="first"><strong>Multiple</strong>
+Multiple models will be active. Each model will be displayed
+with its own color palette and result.</p>
+</li>
+<li><p class="first"><strong>Combined</strong>
+In this mode all models are displayed using a current model
+palette and results. Only the combined palette is displayed. The
+result list will display only common results. The changes to
+palette/legend parameters are applied to all models.</p>
+<p>The Combined option:</p>
+<ul class="simple">
+<li>Responds to both models for ‘CAE Results’ dialog events, usually not.</li>
+<li>Applies current model palette on the existing models.</li>
+<li>Applies No-Result value, if user clicked result is not available for
+other models.</li>
+<li>Animates both models for common result selected.</li>
+<li>If any model does not contain user selected result, no linear
+animation exists for the model.</li>
+<li>Allows users to probe all models.</li>
+<li>Allows users to save this state into viewpoint states.</li>
+</ul>
+<p>Benefits</p>
+<ul class="simple">
+<li>Users can merge two models with similar geometry and compare the CAE
+results.</li>
+<li>Visualize the differences on CAE design through linear and transient
+animations.</li>
+<li>Users can probe both models and compare nodal results.</li>
+<li>Users can save the compared results into cax as viewpoint states.</li>
+</ul>
+</li>
+<li><p class="first"><strong>Multiple Models: Common Legend</strong></p>
+<p>A single legend is used across multiple models. Result
+considered for this legend may not be the same for all models.
+However, it is the same in the case of Combined palette.</p>
+</li>
+</ul>
+<p><strong>Hide Other Model(s):</strong> Hides all other models existing in the scene.</p>
+<p><strong>Results List Box:</strong> lists all the results for the user to select. By default, the first result in the list is selected.</p>
+<p><strong>Instance</strong> Drop down list of  load cases and mode cases. “L1M1” is referred to as Load Case 1 and Mode Case 1. Default Selection is L1M1.</p>
+<p><strong>Derived Type</strong> drop down lists all possible derived types based on the result type selected in the Result List Box.
+Default selection  is,</p>
+<blockquote>
+<div><ul class="simple">
+<li>Translational Magnitude for vectors</li>
+<li>Von Mises Stress for Tensors and</li>
+<li>None for Scalar result.</li>
+</ul>
+</div></blockquote>
+<p><strong>Complex Type</strong> is enabled only for complex eigen data and lists the following complex components.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Real</li>
+<li>Imaginary</li>
+<li>Magnitude</li>
+<li>Phase</li>
+<li>Angle (User has to enter phase angle value).</li>
+</ul>
+</div></blockquote>
+<p><strong>Angle in Degrees</strong> refers to user defined phase angle value. This is applicable for complex eigen result. Default angle is zero.</p>
+<p>The following three options will be enabled and visible if two or more models exist or merged.</p>
+<p><strong>Results List Box</strong> : lists all the results for the user to select. By
+default, the first result in the list is selected.</p>
+<p><strong>Instance:</strong> Drop down list of load cases and mode cases. “L1M1” is
+referred to as Load Case 1 and Mode Case 1. Default Selection is L1M1.</p>
+<p><strong>Derived Type:</strong> Drop down list of all possible derived types based on
+the result type selected in the Result List Box.</p>
+<p>Default selection is,</p>
+<blockquote>
+<div><ul class="simple">
+<li>Translational Magnitude for vectors</li>
+<li>Von Mises Stress for Tensors and</li>
+<li>None for Scalar result.</li>
+</ul>
+</div></blockquote>
+<p><strong>Complex Type</strong> is enabled only for complex eigen data and lists the
+following complex components.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Real</li>
+<li>Imaginary</li>
+<li>Magnitude</li>
+<li>Phase</li>
+<li>Angle (User has to enter phase angle value).</li>
+</ul>
+</div></blockquote>
+<p><strong>Angle in Degrees</strong> refers to user defined phase angle value. This is
+applicable for complex eigen results. Default angle is zero.</p>
+<p><img alt="image1" src="../_images/CAE_result_panel.png" /></p>
+<p><strong>Edit Menu in CAE Results Panel</strong></p>
+<p><img alt="image2" src="../_images/CAE_result_edit.png" /></p>
+<p><strong>Options:</strong> Allows users to set result display names and attributes.</p>
+<p><strong>Apply Distinct Range:</strong> Changes current result legend into distinct
+legend.</p>
+<p><strong>Set As Deform Result: S</strong>ets selected result as deformation result.</p>
+<p><strong>Context menu</strong></p>
+<p>Right click in Results list to open the context menu</p>
+<p><strong>Set as Deform Result:</strong> Sets the selected result as Deform result.
+Displacement, Displacement - Vibration Mode and Deformation results
+become deform results automatically when selected.</p>
+<p><strong>Apply Distinct Range:</strong> &lt;need explanation&gt;</p>
+<p><img alt="image3" src="../_images/CAE_result_set_deform_result.png" /></p>
+<p><strong>Selection of results and Its effects on Legend and model contour</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Application computes CAE result values for visible parts only, while
+changing the result.</li>
+<li>If the user hides one part and applies a new result to the model,
+Legend is computed for visible parts alone.</li>
+<li>Computed color information is applied to the model for contour
+values.</li>
+</ul>
+</div></blockquote>
+<p><strong>Steps to select a result</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Open the CAE Results panel by clicking <strong>CAE Results</strong> from viewer
+context menu or <img alt="image4" src="../_images/CAE_result_icon.jpg" /> icon</li>
+</ul>
+</div></blockquote>
+<p><img alt="image5" src="../_images/CAE_result_active_palette.png" /></p>
+<blockquote>
+<div><ul class="simple">
+<li>Select a result, say <strong>Displacement</strong>.</li>
+<li>Select an Instance, say <strong>L1M1</strong>.</li>
+<li>Select a Derived type, say <strong>Translational Magnitude</strong>.</li>
+<li>Notice that CAE result defined is applied on the viewer model as
+below.</li>
+</ul>
+</div></blockquote>
+<p><img alt="image6" src="../_images/Presenter_selected_result.png" /></p>
+<p><strong>Steps to set and view deform result for vector types</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Load a CAX file</li>
+<li>Click <strong>CAE | Result List</strong> from the context menu</li>
+<li>Current deform result is mentioned in the bottom left corner of the viewer.</li>
+</ul>
+</div></blockquote>
+<p><img alt="image7" src="../_images/CAE_result_vector.png" /></p>
+<blockquote>
+<div><ul class="simple">
+<li>Select any other vector type result.</li>
+</ul>
+</div></blockquote>
+<p><img alt="image8" src="../_images/CAE_result_vector_type.png" /></p>
+<blockquote>
+<div><ul class="simple">
+<li>Observe that deform result is still <strong>Displacement</strong>, even though a
+different result is selected.</li>
+<li>Select <strong>Set As Deform Result</strong> from the context for current
+selection.</li>
+</ul>
+</div></blockquote>
+<p><img alt="image9" src="../_images/Presenter_set_deform_result.png" /></p>
+<blockquote>
+<div><ul class="simple">
+<li>View <strong>Deformation Result</strong> in the viewer as selected type.</li>
+</ul>
+</div></blockquote>
+<p><strong>Steps to utilize the Combined Palette option</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Load a CAX file, which contains CAE model.</li>
+<li>Merge another CAX file, which contains the same geometry but
+different CAE model results.</li>
+<li>If both model geometry coincides in scene, move one of them away
+using the <strong>Transform</strong> option in the product tree context menu.</li>
+<li>Click <strong>CAE | Result List</strong> from context menu,</li>
+<li>Select <strong>Combined Palette</strong> option to apply current palette for both
+the models.</li>
+</ul>
+</div></blockquote>
+<p>The user can now do all CAE operations on both the models to compare CAE
+results. For example, probe the same node in both the models and compare
+the nodal results.</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2023, Visual Collaboration Technologies Inc..<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Video Template Editor GUI &mdash; VCollab-Document  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/Custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="List of Commands" href="Commands_List.html" />
+    <link rel="prev" title="List of Commands" href="../ReportCMDEditor/Commands_List.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #EDEDED" >
+          
+
+          
+            <a href="../../VCollabProX.html">
+          
+
+          
+            
+            <img src="../../_static/VCollab-Logo-wt.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+              <div class="version">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Version</title>
+</head>
+<body>
+    
+    <span class="version">23.3
+              </div>
+
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../VCollab%20Pro%20X/index.html">VCollabPro X</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/GUI_Layout.html">GUI Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/System_Requirements.html">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Custom_Toolbar.html">Custom Toolbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/File_Menu.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/View_Menu.html">View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Edit_Menu.html">Edit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Tools_Menu.html">Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/CAE_Menu.html">CAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Find_Parts.html">Find Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Profiles.html">Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/BatchMode.html">Batch Mode</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Python Utilities</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../PyTools/PyToolsHelp.html">Py Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ReportCMDEditor/Template_Editor_GUI.html">Report Template Editor GUI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ReportCMDEditor/Commands_List.html">List of Commands</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Video Template Editor GUI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#command-list">Command List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#menu">Menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-commands">Add Commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#model-transform">Model Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#camera-transform">Camera Transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#save-video">Save Video</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Commands_List.html">List of Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VMSubmitEditor/VMoveSubmitHelp.html">GUI to Create CAX using VMoveCAESubmit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VMSubmitEditor/VMoveSubmitExample.html">Example Command File</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../VCollab%20Pro%20X/Headless_Server.html">Linux - Configuration for Headless Server</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../VCollabProX.html">VCollab-Document</a>
+        
+      </nav>
+
+	  <div class="rst-header">
+	  
+	   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" class="rst-header" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../VCollabProX.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../VCollab%20Pro%20X/index.html">VCollabPro X</a> &raquo;</li>
+        
+          <li><a href="../index.html">Python Utilities</a> &raquo;</li>
+        
+      <li>Video Template Editor GUI</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="Commands_List.html" class="btn btn-neutral float-right" title="List of Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="../ReportCMDEditor/Commands_List.html" class="btn btn-neutral float-left" title="List of Commands" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+	  
+	  </div>
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+         
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="video-template-editor-gui">
+<h1>Video Template Editor GUI<a class="headerlink" href="#video-template-editor-gui" title="Permalink to this headline">¶</a></h1>
+<p>To open the GUI, select the submenu <em>Video Maker</em> from <em>PY_Tools</em> main menu of VCollab Pro or ProX.</p>
+<img alt="../../_images/TitlePage.png" src="../../_images/TitlePage.png" />
+<div class="section" id="command-list">
+<h2>Command List<a class="headerlink" href="#command-list" title="Permalink to this headline">¶</a></h2>
+<p>Current list of commands in the template. User can Add, Modify, Run or Save these commands.</p>
+</div>
+<div class="section" id="menu">
+<h2>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><img alt="open" src="../../_images/icons8-open-641.png" /> <strong>File Open</strong>: Select a video template file (A file selection dialog will popup). The commands from this file will be added to the <em>Command List</em>.</p></li>
+<li><p><img alt="save" src="../../_images/icons8-save-641.png" /> <strong>Save File</strong>: Save all commands defined in  the <em>Command List</em> as a video template file.</p></li>
+<li><p><img alt="runcmd" src="../../_images/icons8-run-641.png" /> <strong>Run Commands</strong>: Run all commands in the <em>Command List</em>.</p></li>
+<li><p><img alt="editcmdn" src="../../_images/editiconN2.png" /> <img alt="editcmdy" src="../../_images/editiconY1.png" /> <strong>Edit Commands</strong>: This is a toggle button. When green, user can directly edit the commands in the <em>Command List</em>.</p></li>
+<li><p><img alt="delete" src="../../_images/icons8-trash-642.png" /> <strong>Clear All</strong>: Clear all commands from the <em>Command List</em>.</p></li>
+<li><p><img alt="recon" src="../../_images/rec_on.png" /> <img alt="recoff" src="../../_images/rec_off.png" /> <strong>Record Images</strong>: Toggle button to set image capturing ON/OFF. When this is in ON mode, Images will be captured into a temporary folder. Save command will create video from these images.</p></li>
+<li><p><img alt="exit" src="../../_images/icons8-closewin1.png" /> <strong>Exit</strong>: Close this dialog and exit.</p></li>
+<li><p><img alt="help" src="../../_images/Help2.png" /> <strong>Help</strong>: Show this help message in a browser tab.</p></li>
+</ul>
+</div>
+<div class="section" id="add-commands">
+<h2>Add Commands<a class="headerlink" href="#add-commands" title="Permalink to this headline">¶</a></h2>
+<p>User can define a new command in this text filed. This command can be added to the <em>Command list</em>.</p>
+<img alt="../../_images/AddCmdTab.png" src="../../_images/AddCmdTab.png" />
+<ul class="simple">
+<li><p><strong>Argument List</strong>: When user enters a valid command, a list of parameters that can be specified for the command will be displayed in this text box.</p></li>
+<li><p><strong>Run Command</strong>: If this checkbox is <em>ON</em>, command will be run before entering into the <em>Command List</em>.</p></li>
+<li><p><strong>Enter</strong>: Click this button to add the command in the text filed to the <em>Command List</em>.</p></li>
+<li><p><strong>Clear</strong>: Click this button to clear current command in the text field.</p></li>
+<li><p><strong>Select Commands</strong>: Click this button to select a command from the Tree View (as shown below).</p></li>
+</ul>
+<img alt="../../_images/TreeView.png" src="../../_images/TreeView.png" />
+<p>When a new command is selected/edited in text filed, corresponding argument list will be displayed in the <em>Argument List</em> text box.</p>
+</div>
+<div class="section" id="model-transform">
+<h2>Model Transform<a class="headerlink" href="#model-transform" title="Permalink to this headline">¶</a></h2>
+<p>User can define a set of Model/Part transformation (rotate and move) commands using GUI.</p>
+<img alt="../../_images/ModelTransTab.png" src="../../_images/ModelTransTab.png" />
+<ul class="simple">
+<li><p>Select few parts from screen and use <strong>+/-</strong> buttons to rotate or translate the selected parts.</p></li>
+<li><p>Selected parts will be displayed in the <strong>Selected Parts</strong> list box.</p></li>
+<li><p>Use <strong>Part Menu</strong> to select any parts from a listbox.</p></li>
+<li><p><strong>Screen</strong> toggle can be used to define axis in Screen/Camera cordinate system.</p></li>
+<li><p><strong>Save as Command</strong> will save all the model movement commands.</p></li>
+<li><p><strong>NFrames</strong> will be used as number of frames.</p></li>
+</ul>
+</div>
+<div class="section" id="camera-transform">
+<h2>Camera Transform<a class="headerlink" href="#camera-transform" title="Permalink to this headline">¶</a></h2>
+<p>User can define a set of Camera transform commands (rotate and move) in this GUI.</p>
+<img alt="../../_images/Camera_Transforms_Tab.png" src="../../_images/Camera_Transforms_Tab.png" />
+<ul class="simple">
+<li><p>Use <strong>+/-</strong> buttons to rotate or translate the camera.</p></li>
+<li><p><strong>Screen</strong> toggle can be used to define axis in Screen/Camera cordinate system.</p></li>
+<li><p><strong>Save as Command</strong> will save all the camera movement commands.</p></li>
+<li><p><strong>NFrames</strong> will be used as number of frames.</p></li>
+</ul>
+</div>
+<div class="section" id="save-video">
+<h2>Save Video<a class="headerlink" href="#save-video" title="Permalink to this headline">¶</a></h2>
+<p>User can Save a video file from this tab.</p>
+<ul class="simple">
+<li><p>When the <strong>Record Images</strong> button is <em>ON</em>, the recorded images will be saved in a temperory folder and the <strong>Number of Images Saved</strong> will be updated.</p></li>
+<li><p><strong>Reset Capture</strong> will reset the captured images.</p></li>
+<li><p>User can <strong>Browse</strong> to the folder and set the video file name. Currently supported formats are: <em>MP4</em>, <em>GIF</em>, <em>AVI</em>, <em>FLV</em>, and <em>WMV</em>.</p></li>
+<li><p><strong>Save</strong> will stitch all the captured images together and save them as the video file.</p></li>
+</ul>
+<img alt="../../_images/SaveVideo.png" src="../../_images/SaveVideo.png" />
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>Here is a sample command template file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#-- VPANIM_PARAMS,nFrame_VP2VP,nImgsPerView=1,iSectionAnimFrames,iExplodeAnimFrames</span>
+<span class="n">VPANIM_PARAMS</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">25</span>
+<span class="c1">#-- VPANIM_CAEPARAMS,bCAEAnim(Y/N),nCylesPerView,nFramesPerCyle,nImgsPerCAEFrame</span>
+<span class="n">VPANIM_CAEPARAMS</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">1</span>
+<span class="c1">#-- Select ViewPoint 1</span>
+<span class="n">APPLY_VP</span><span class="p">,</span><span class="mi">1</span>
+<span class="n">VP2VP_ANIM</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span>
+<span class="n">MOVE_CAMERA</span><span class="p">,</span><span class="mi">300</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="n">Y</span>
+<span class="n">ROTATE_CAMERA</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="n">Y</span>
+<span class="n">SAVE_VIDEO</span><span class="p">,</span><span class="n">Test123</span><span class="o">.</span><span class="n">mp4</span><span class="p">,</span><span class="mi">0</span>
+<span class="n">EXIT</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Commands will be excecuted line by line. Any text after ‘#’ is a comment.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Visual Collaboration Technologies Inc..
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+  
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-736729-4"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-736729-4');
+</script>
+	    
+</body>
+</html>

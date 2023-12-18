@@ -1,0 +1,13 @@
+Load Adams Plot
+---------------
+
+The Adams Plots can be drawn using the ‘Tools | Load Adams Plot’ interface
+|vcprox_adams_load_plot|
+
+
+The following window is opened by VCollabPro when this option is selected. The user can draw curves by selecting the differnt parameters listed in the 'Objects', 'Characteristics', and 'Components'
+
+|vcprox_adams_plot_window|
+
+.. |vcprox_adams_load_plot| image:: images/vcprox_adams_load_plot.png
+.. |vcprox_adams_plot_window| image:: images/vcprox_adams_plot_window.png

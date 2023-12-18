@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Import &mdash; VCollab-Document  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/Custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="View" href="View_Menu.html" />
+    <link rel="prev" title="Export" href="Export.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #EDEDED" >
+          
+
+          
+            <a href="../VCollabProX.html">
+          
+
+          
+            
+            <img src="../_static/VCollab-Logo-wt.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+              <div class="version">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Version</title>
+</head>
+<body>
+    
+    <span class="version">23.2.0
+              </div>
+
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VCollabPro X</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="GUI_Layout.html">GUI Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System_Requirements.html">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Custom_Toolbar.html">Custom Toolbar</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="File_Menu.html">File</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Loading_CAX.html">Loading CAX file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Merging_CAX.html">Merging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Save_As.html">Save As</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Export.html">Export</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Import</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#importing-cae-results">Importing CAE Results</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="View_Menu.html">View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Edit_Menu.html">Edit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tools_Menu.html">Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CAE_Menu.html">CAE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Find_Parts.html">Find Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Profiles.html">Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BatchMode.html">Batch Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PyTools/index.html">Python Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Headless_Server.html">Linux - Configuration for Headless Server</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../VCollabProX.html">VCollab-Document</a>
+        
+      </nav>
+
+	  <div class="rst-header">
+	  
+	   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" class="rst-header" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../VCollabProX.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">VCollabPro X</a> &raquo;</li>
+        
+          <li><a href="File_Menu.html">File</a> &raquo;</li>
+        
+      <li>Import</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="View_Menu.html" class="btn btn-neutral float-right" title="View" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="Export.html" class="btn btn-neutral float-left" title="Export" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+	  
+	  </div>
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+         
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="import">
+<h1>Import<a class="headerlink" href="#import" title="Permalink to this headline">¶</a></h1>
+<p>This command helps user to import various data files into VCollab Pro.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>*.py (python script file to run set of commands)</p></li>
+<li><p>*.csv (User defined result file )</p></li>
+<li><p>*.vpt (Viewpoints file)</p></li>
+<li><p>*.cax (Viewpoints from cax file)</p></li>
+</ul>
+</div></blockquote>
+<p><strong>How to run python script files?</strong></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Select Import option in the File toolbar,</p>
+<p><img alt="image1" src="../_images/File_Menu_Items.png" /></p>
+</li>
+<li><p>Select Python script files <strong>(*.py)</strong>,</p></li>
+<li><p>Click open to run the script.</p></li>
+</ol>
+</div></blockquote>
+<p><strong>How to import viewpoints from external files?</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Launch VCollabPro application.</p></li>
+<li><p>Load a CAX <strong>(*.cax)</strong> file.</p></li>
+<li><p>Click Import option in the File toolbar,</p></li>
+<li><p>It pops up file browser dialog.</p></li>
+<li><p>Select ‘Files of Type’ as VCollab Files <strong>(*.vpt)</strong> or VCollab
+Files <strong>(*.cax)</strong>.</p></li>
+<li><p>File browser dialog lists all either viewpoint files or CAX files.</p></li>
+<li><p>Select a file.</p></li>
+<li><p>Click Open to import all view paths from the external file.</p></li>
+</ol>
+</div></blockquote>
+<div class="section" id="importing-cae-results">
+<h2>Importing CAE Results<a class="headerlink" href="#importing-cae-results" title="Permalink to this headline">¶</a></h2>
+<p>VCollab Pro supports importing of external CAE results from files in
+CSV (comma separated values) format. These results are added as new
+results or instances of existing results. VCollab Pro imports results
+only for the visible parts based on node or element numbers.</p>
+<p><strong>Sample CSV File</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>#VCOLLAB_RESULTS</p>
+<p>Node,Displacement,Stress,</p>
+<p>Vector,Tensor,</p>
+<p>#INSTANCE,L1M1,Label:Step1,Time:0.1</p>
+<p>1818,0.000000,0.000000,0.000000,0.401617,-0.543105,-0.496605, 0.016011,1.541499,-0.090037,</p>
+<p>1848,0.000000,0.000000,0.000000,-0.330866,-0.389335,-0.527343,-0.010698,1.284187,-0.019899,</p>
+<p>1845,0.000000,0.000000,0.000000,-0.486035,-0.668757,-0.667392,-0.024487,1.603551,-0.030750,</p>
+<p>#INSTANCE,L2M1,Label:Step2,Time:0.2</p>
+<p>1818,-0.543105,-0.496605, 0.016011,1.541499,0.000000,0.000000,0.000000,0.401617,-0.090037,</p>
+<p>1848,-0.010698,1.284187,-0.0198990.000000,0.000000,0.000000,-0.330866,-0.389335,-0.527343,</p>
+<p>1845,0.000000,0.000000,-0.486035,-0.6687570.000000,0.000000,0.000000,-0.486035,-0.668757,</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="csv-file-format">
+<h3>CSV File Format<a class="headerlink" href="#csv-file-format" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 41%" />
+<col style="width: 46%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Line No</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+<td><p><strong>Example</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>#VCOLLAB_RESULTS</p></td>
+<td><p>Header line to identify VCollab CSV format.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Node/Element, Result1, Result2,….</p></td>
+<td><p>Use Node for nodal result and Element for
+elemental result. All results should be of
+same type.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Result Types for each result.</p></td>
+<td><p>Scalar / Vector / SixDof / Tensor
+For complex results:
+Scalr_RI / Vector_RI / SixDof_RI / Tensor_RI</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>#INSTANCE,
+[Instance_name1],
+Instance attributes</p></td>
+<td><p>Each attribute should have key and value
+separated by ‘:’
+For example,
+Time: 1.0, Label:Step-1,</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>node/element ID
+value1, value2,
+value3,….</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>node/element ID
+value1, value2,
+value3,….</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>node/element ID
+value1, value2,
+value3,….</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p>#INSTANCE,
+[Instance_name2],Instance
+attributes</p></td>
+<td><p>Multiple instances are supported</p></td>
+</tr>
+<tr class="row-even"><td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p>node/element ID
+value1, value2,
+value3,….</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>…</p></td>
+<td><p>node/element ID
+value1, value2,
+value3,….</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p>node/element ID
+value1, value2,
+value3,….</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>…</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 58%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Supported Result Types</p></th>
+<th class="head"><p>Number of Columns (Components)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Scalar</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vector</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>SixDOF</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tensor</p></td>
+<td><p>6</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Python API Support</strong></p>
+<p>VCollab Pro provides the following methods to export and import result instances.</p>
+<ol class="arabic simple">
+<li><p>xExportCAEResult(ouput_file_path, result_list,instance_list, precision, scientific_format);</p></li>
+<li><p>xImportCAEResult(csv_file_path);</p></li>
+</ol>
+<p>Refer to VCollab Pro API manual available in the local installation folder for usage and syntax.</p>
+<dl class="simple">
+<dt><strong>Steps to Import Results from a CSV file</strong></dt><dd><ol class="arabic simple">
+<li><p>Launch VCollabPro application.</p></li>
+<li><p>Load a CAX (*.cax) file</p></li>
+<li><p>Click <em>File | Import</em> option.</p></li>
+<li><p>It pops up file browser dialog.</p></li>
+<li><p>Select ‘<em>Files of Type</em>’ as Result Files (*.csv)</p></li>
+<li><p>File browser dialog lists all csv files.</p></li>
+<li><p>Select VCollab supported csv file.</p></li>
+<li><p>Click Open to import all CAE results.</p></li>
+<li><p>Check ‘CAE | Results List’ for the result name / instance name.</p></li>
+</ol>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Visual Collaboration Technologies Inc..
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+  
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-736729-4"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-736729-4');
+</script>
+	    
+</body>
+</html>
