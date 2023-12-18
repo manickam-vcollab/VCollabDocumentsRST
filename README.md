@@ -3,11 +3,11 @@
 - This rst format can help us to convert some other formats.
 - Every folder contains config.py file it hepls us to configure the theme.
 ## Build command for html 
-     open local path terminal run 
+     - Open local path terminal run 
 ```sh
   make.bat html
 ```
-     this command will create build folder with html files you can just open index.html file with any browser.
+     - This command will create build folder with html files you can just open index.html file with any browser.
 ## Build command for chm 
      open local path terminal run
 ```sh
