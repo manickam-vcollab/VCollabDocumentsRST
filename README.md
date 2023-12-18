@@ -4,9 +4,11 @@
 - Every folder contains config.py file it hepls us to configure the theme.
 ## Build command for html 
      - Open local path terminal run 
+     
 ```sh
   make.bat html
 ```
+
      - This command will create build folder with html files you can just open index.html file with any browser.
 ## Build command for chm 
      open local path terminal run
