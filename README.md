@@ -10,7 +10,8 @@
   make.bat html
 ```
 
-     - This command will create build folder with html files you can just open index.html file with any browser.
+
+  This command will create build folder with html files you can just open index.html file with any browser.
 ## Build command for chm 
      open local path terminal run
 ```sh
