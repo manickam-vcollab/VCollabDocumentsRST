@@ -29,7 +29,7 @@ make.bat htmlhelp
 
   This command will create build folder along with sub folder which is called **htmlhelp** it has **.hhp** file 
  you can use this file in to **Html Help Workshop** [Html help] it's an application to generate **chm** file.  
-> Note: Whenever you are going to build html or chml you need to update videos file path in this rst files.(**because live site folder structure is different**).
+> Note: If you are going to build html or chm you need to update videos file path in rst files.(**because live site folder structure is different**).
 > 
 > [Sphinx link]: https://www.sphinx-doc.org/en/master/
 > [Html help]: https://learn.microsoft.com/en-us/previous-versions/windows/desktop/htmlhelp/microsoft-html-help-downloads
